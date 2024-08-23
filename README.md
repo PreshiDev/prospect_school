@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # School-Website-Full-Design
 
 Creating a school website design in HTML and CSS involves designing a website that is visually appealing, 
@@ -32,8 +31,4 @@ By using responsive design techniques in the HTML and CSS code, the school websi
 
 ```_________________________________________________________________________________________________
 ```
- > ### For More Useful project You Can Visit [MY PROFILE ACCOUNT](https://github.com/omarMohammedbenzo):sparkling_heart:
-=======
-# prospect_school
-prospect school landing page
->>>>>>> 42fa185 (Initial commit)
+

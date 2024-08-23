@@ -1,3 +1,9 @@
+
+
+# prospect_school
+prospect school landing page
+
+
 # School-Website-Full-Design
 
 Creating a school website design in HTML and CSS involves designing a website that is visually appealing, 

@@ -3,6 +3,7 @@ body {
 
   color: #48494a;
   background-image: url(../images/body-bg.jpg);
+  overflow-x: hidden;
 }
 
 .layout_padding {
@@ -109,6 +110,7 @@ a:focus {
 .top_container {
   height: 95vh;
   position: relative;
+  overflow-x: hidden;
 }
 
 .top_container::before {

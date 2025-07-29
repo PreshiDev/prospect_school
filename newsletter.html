@@ -1,530 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>End of Term Newsletter | Prospect Private School</title>
-  
-  <!-- Bootstrap CSS -->
+  <!-- Site Metas -->
+  <!-- <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" /> -->
+  <title>Prospect Private School</title>
+
+  <!-- bootstrap core css -->
+
+  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <style>
-    :root {
-      --primary: #2563eb;
-      --secondary: #10b981;
-      --accent: #f59e0b;
-      --dark: #1e293b;
-      --light: #f8fafc;
-      --gray: #94a3b8;
-      --light-gray: #e2e8f0;
-    }
-    
-    body {
-      font-family: 'Poppins', sans-serif;
-      color: var(--dark);
-      line-height: 1.6;
-      background-color: #f9fafb;
-    }
-    
-    .header {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      padding: 3rem 0;
-      margin-bottom: 3rem;
-    }
-    
-    .header h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-    }
-    
-    .newsletter-container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: white;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    
-    .newsletter-header {
-      text-align: center;
-      padding: 2rem;
-      border-bottom: 1px solid var(--light-gray);
-    }
-    
-    .newsletter-header img {
-      height: 80px;
-      margin-bottom: 1rem;
-    }
-    
-    .newsletter-header h1 {
-      color: var(--primary);
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-    
-    .newsletter-header p.subtitle {
-      color: var(--gray);
-      font-size: 1.1rem;
-    }
-    
-    .newsletter-body {
-      padding: 2rem;
-    }
-    
-    .section {
-      margin-bottom: 3rem;
-    }
-    
-    .section-title {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 600;
-      color: var(--primary);
-      margin-bottom: 1.5rem;
-      position: relative;
-      padding-bottom: 0.5rem;
-    }
-    
-    .section-title:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 50px;
-      height: 3px;
-      background: linear-gradient(to right, var(--primary), var(--secondary));
-    }
-    
-    .highlight-box {
-      background-color: rgba(16, 185, 129, 0.1);
-      border-left: 4px solid var(--secondary);
-      padding: 1.5rem;
-      border-radius: 0 8px 8px 0;
-      margin: 1.5rem 0;
-    }
-    
-    .feature-card {
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-      margin-bottom: 1.5rem;
-      border: 1px solid var(--light-gray);
-    }
-    
-    .feature-card-header {
-      background-color: var(--primary);
-      color: white;
-      padding: 1rem;
-      font-weight: 600;
-    }
-    
-    .feature-card-body {
-      padding: 1.5rem;
-    }
-    
-    .timeline {
-      position: relative;
-      padding-left: 2rem;
-    }
-    
-    .timeline:before {
-      content: '';
-      position: absolute;
-      left: 7px;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      background-color: var(--light-gray);
-    }
-    
-    .timeline-item {
-      position: relative;
-      margin-bottom: 1.5rem;
-    }
-    
-    .timeline-item:last-child {
-      margin-bottom: 0;
-    }
-    
-    .timeline-dot {
-      position: absolute;
-      left: -2rem;
-      top: 5px;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: var(--primary);
-    }
-    
-    .timeline-date {
-      font-weight: 600;
-      color: var(--primary);
-      margin-bottom: 0.25rem;
-    }
-    
-    .timeline-content {
-      padding-bottom: 1rem;
-    }
-    
-    .program-card {
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-      margin-bottom: 1.5rem;
-      border: 1px solid var(--light-gray);
-      transition: transform 0.3s ease;
-    }
-    
-    .program-card:hover {
-      transform: translateY(-5px);
-    }
-    
-    .program-card-header {
-      background-color: var(--secondary);
-      color: white;
-      padding: 1rem;
-      font-weight: 600;
-      text-align: center;
-    }
-    
-    .program-card-body {
-      padding: 1.5rem;
-      text-align: center;
-    }
-    
-    .program-price {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin: 1rem 0;
-    }
-    
-    .footer {
-      background-color: var(--dark);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      margin-top: 3rem;
-    }
-    
-    .footer p {
-      margin-bottom: 0;
-    }
-    
-    .footer a {
-      color: var(--secondary);
-    }
-    
-    .footer a:hover {
-      color: white;
-      text-decoration: none;
-    }
-    
-    .badge-pill {
-      padding: 0.5em 1em;
-      font-weight: 500;
-    }
-    
-    @media (max-width: 768px) {
-      .header {
-        padding: 2rem 0;
-      }
-      
-      .newsletter-header h1 {
-        font-size: 1.8rem;
-      }
-      
-      .newsletter-body {
-        padding: 1.5rem;
-      }
-    }
-  </style>
+
+  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> -->
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- font wesome stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="icon" href="images/prospect-school-logo.jpeg" type="image/icon type">
+ 
 </head>
 
 <body>
-  <!-- Header -->
-  <div class="header">
-    <div class="container text-center">
-      <h1>End of Term Newsletter</h1>
-      <p class="lead">Session Highlights & Upcoming Programs</p>
-    </div>
-  </div>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/prospect-school-logo.jpeg" alt="">
+            <span>
+              Prospect Private School
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-  <!-- Newsletter Container -->
-  <div class="container mb-5">
-    <div class="newsletter-container">
-      <!-- Newsletter Header -->
-      <div class="newsletter-header">
-        <img src="images/prospect-school-logo.jpeg" alt="Prospect Private School Logo">
-        <h1>Prospect Private School</h1>
-        <p class="subtitle">Building Future Leaders Through Quality Education</p>
-        <span class="badge badge-pill badge-light">Term 3, 2024/2025 Session</span>
-      </div>
-      
-      <!-- Newsletter Body -->
-      <div class="newsletter-body">
-        <!-- Opening Message -->
-        <div class="section">
-          <p class="lead">Dear Parents and Guardians,</p>
-          <p>As we wrap up another vibrant and productive session, we give all glory to God for His continuous mercy and grace. He has been our help in ages past and our hope for years to come. We also extend our heartfelt appreciation to our wonderful parents for your consistent support, encouragement, and trust.</p>
-          <p>This session has been filled with growth, achievements, and memorable experiences for the management, staff, and our learners across both the primary and secondary sections.</p>
-        </div>
-        
-        <!-- Highlights Section -->
-        <div class="section">
-          <h2 class="section-title">Session Highlights</h2>
-          
-          <div class="row">
-            <!-- Learning Beyond Classroom -->
-            <div class="col-md-6">
-              <div class="feature-card">
-                <div class="feature-card-header">
-                  <i class="fas fa-bus mr-2"></i> Learning Beyond the Classroom
-                </div>
-                <div class="feature-card-body">
-                  <p>Our students embarked on an exciting educational trip to the Train Museum in Lagos State. It was a hands-on learning experience that brought classroom knowledge to life and deepened their understanding of transportation and infrastructure in our country.</p>
-                </div>
-              </div>
-            </div>
-            
-            <!-- WAEC Approval -->
-            <div class="col-md-6">
-              <div class="feature-card">
-                <div class="feature-card-header">
-                  <i class="fas fa-award mr-2"></i> WAEC Approval – A Big Win!
-                </div>
-                <div class="feature-card-body">
-                  <p>We are thrilled to announce that our secondary school has been officially approved to conduct the WAEC examination. Our first sitting was held between May and June. This milestone opens new doors of opportunity for our students' academic future.</p>
-                </div>
-              </div>
-            </div>
-            
-            <!-- CBT Introduction -->
-            <div class="col-md-6">
-              <div class="feature-card">
-                <div class="feature-card-header">
-                  <i class="fas fa-laptop-code mr-2"></i> CBT Introduction
-                </div>
-                <div class="feature-card-body">
-                  <p>We proudly launched our Computer-Based Testing (CBT) system this session with outstanding success. Both students and teachers adapted quickly to the new format, setting a strong foundation for modern assessment.</p>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Color Week Celebration -->
-            <div class="col-md-6">
-              <div class="feature-card">
-                <div class="feature-card-header">
-                  <i class="fas fa-palette mr-2"></i> Colour Week Celebration
-                </div>
-                <div class="feature-card-body">
-                  <p>Our Preschool, Pre-Nursery, and Nursery sections enjoyed a vibrant Colour Week. Each day featured different themed colors with fun activities and expressive arts that made the week both educational and exciting.</p>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Inter-Class Competition -->
-            <div class="col-md-12">
-              <div class="feature-card">
-                <div class="feature-card-header">
-                  <i class="fas fa-trophy mr-2"></i> Inter-Class Competition
-                </div>
-                <div class="feature-card-body">
-                  <p>Students showcased their talents in academics, sports, and creative challenges. This event fostered healthy rivalry, teamwork, and confidence among all participants.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Important Dates -->
-        <div class="section">
-          <h2 class="section-title">Important Dates</h2>
-          
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-date">Monday, 15th September 2025</div>
-              <div class="timeline-content">
-                <h5>School Resumption</h5>
-                <p>All students return for the new academic session</p>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-date">15th September - 15th December 2025</div>
-              <div class="timeline-content">
-                <h5>WAEC Registration Period</h5>
-                <p>Registration opens for West African Examinations Council</p>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-date">15th September - 17th December 2025</div>
-              <div class="timeline-content">
-                <h5>BECE Registration Period</h5>
-                <p>Registration for Basic Education Certificate Examination</p>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-date">15th October 2025 - 15th January 2026</div>
-              <div class="timeline-content">
-                <h5>FSLC Registration Period</h5>
-                <p>Registration for First School Leaving Certificate</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Summer Boot Camp -->
-        <div class="section">
-          <h2 class="section-title">Summer Boot Camp</h2>
-          <p>To keep our students intellectually active during the holiday, we are excited to offer a Summer Boot Camp. This intensive and fun-filled academic camp will help learners strengthen key subjects, build confidence, and develop valuable study habits.</p>
-          
-          <div class="highlight-box">
-            <p><i class="fas fa-calendar-alt mr-2"></i> <strong>Date:</strong> 5th August – 29th August 2025</p>
-            <p><i class="fas fa-clock mr-2"></i> <strong>Time:</strong> 9:00am – 2:00pm daily</p>
-          </div>
-          
-          <div class="row">
-            <div class="col-md-4">
-              <div class="program-card">
-                <div class="program-card-header">
-                  Secondary School
-                </div>
-                <div class="program-card-body">
-                  <div class="program-price">₦10,000</div>
-                  <p>Intensive subject reinforcement and skill development</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="program-card">
-                <div class="program-card-header">
-                  Primary School
-                </div>
-                <div class="program-card-body">
-                  <div class="program-price">₦7,000</div>
-                  <p>Fun learning activities and foundational skills</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="program-card">
-                <div class="program-card-header">
-                  Preschool/Nursery
-                </div>
-                <div class="program-card-body">
-                  <div class="program-price">₦5,000</div>
-                  <p>Engaging early learning activities</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- New Programs -->
-        <div class="section">
-          <h2 class="section-title">New Programs Starting Next Term</h2>
-          
-          <div class="row">
-            <div class="col-md-6">
-              <div class="feature-card">
-                <div class="feature-card-header bg-success">
-                  <i class="fas fa-code mr-2"></i> Compulsory Coding Classes
-                </div>
-                <div class="feature-card-body">
-                  <p>In line with global trends and 21st-century skills development, coding will be compulsory for all pupils and students from next term. This will equip them with:</p>
-                  <ul>
-                    <li>Problem-solving skills</li>
-                    <li>Logical thinking</li>
-                    <li>Digital literacy</li>
-                    <li>Creativity and innovation</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-6">
-              <div class="feature-card">
-                <div class="feature-card-header bg-warning text-dark">
-                  <i class="fas fa-users mr-2"></i> School Clubs Enrollment
-                </div>
-                <div class="feature-card-body">
-                  <p>All students must join one of the following clubs as part of our extracurricular development program:</p>
-                  <ul>
-                    <li><strong>Music Club</strong> - Develop musical talents</li>
-                    <li><strong>JET Club</strong> - Junior Engineers, Technicians, and Scientists</li>
-                    <li><strong>Art Club</strong> - Creative expression</li>
-                  </ul>
-                  <p class="mt-3"><em>Parents should enroll their children before resumption.</em></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Result Checking -->
-        <div class="section">
-          <h2 class="section-title">Result Checking</h2>
-          <p>End-of-term results are now available on the school portal:</p>
-          
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5><i class="fas fa-laptop mr-2 text-primary"></i> How to Access Results</h5>
-              <ol>
-                <li>Visit <a href="https://www.prospectschool.com.ng" target="_blank">www.prospectschool.com.ng</a> and select E-portal</li>
-                <li>Login as a parent or student using credentials provided</li>
-                <li>Alternatively, visit <a href="https://www.edstream.com.ng" target="_blank">www.edstream.com.ng</a></li>
-              </ol>
-            </div>
-          </div>
-        </div>
-        
-        <!-- School Fees -->
-        <div class="section">
-          <h2 class="section-title">School Fees</h2>
-          <p>We sincerely appreciate all parents who made timely fee payments this term. Your support enables us to maintain quality education, retain dedicated staff, and improve our facilities.</p>
-          <div class="alert alert-info">
-            <i class="fas fa-info-circle mr-2"></i> <strong>Important:</strong> All payments must be made within 2 weeks before and 2 weeks after resumption.
-          </div>
-        </div>
-        
-        <!-- Closing Message -->
-        <div class="section text-center">
-          <p class="lead">Thank you for your continued partnership in shaping the minds and hearts of tomorrow.</p>
-          <p>We wish you and your family a restful, joyful, and safe holiday.</p>
-          <p><strong>The Prospect Private School Team</strong></p>
-        </div>
-      </div>
-    </div>
-  </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
 
-  <!-- Footer -->
-  <div class="footer">
+                <!-- <li class="nav-item ">
+                  <a class="nav-link" href="teacher.html"> Teacher </a>
+                </li> -->
+
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="vehicle.html"> vehicle </a>
+                </li> -->
+
+                <li class="nav-item ">
+                  <a class="nav-link" href="https://edstream.com.ng/accounts/login/"> E-portal </a>
+                </li>
+
+                <li class="nav-item ">
+                  <a class="nav-link" href="newsletter.html"> News-Letter </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+
+              </ul>
+              <!-- <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form> -->
+            </div>
+        </nav>
+      </div>
+    </header>
     <div class="container">
-      <p>Prospect Private School | Ijagba, Obasanjo, Sango Ota, Ogun State</p>
-      <p>Phone: +234 813 341 2091 | Email: info@prospectschool.com.ng</p>
-      <p>&copy; 2025 Prospect Private School. All rights reserved.</p>
-    </div>
-  </div>
+        <div class="newsletter">
+            <h2 class="text-center">Newsletter - 2nd Term</h2>
+            
+            <div class="section">
+                <h3>Gratitude and Achievements</h3>
+                <p>As we conclude the second term, we extend our deepest gratitude to Almighty God, our Alpha and Omega, for guiding us through this journey. We also appreciate our esteemed parents, diligent students, and dedicated staff for their unwavering commitment, resilience, and hard work throughout the term. This term, we have recorded remarkable achievements in academics, extracurricular activities, and community engagement.</p>
+            </div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+            <div class="section">
+                <h3>Academic Achievement</h3>
+                <p>We are thrilled to announce the outstanding performance of our students in both midterm and final assessments. Special congratulations to our top-performing students and those who demonstrated remarkable improvements. Our Year 6, 9, and 12 students successfully completed their mock examinations, and we are confident that they are well-prepared for their upcoming state, national, and international exams.</p>
+            </div>
+
+            <div class="section">
+                <h3>Extracurricular Activities</h3>
+                <p>This term, we successfully hosted the Spelling Bee and Inter-Class Quiz competitions at Great Prospect College. These competitions were designed to enhance academic performance, foster healthy competition, and boost student confidence in core subjects such as Mathematics, Further Mathematics, Chemistry, Biology, and Agricultural Science.</p>
+                <h4>Event Overview</h4>
+                <ul>
+                    <li><strong>Spelling Bee Competition:</strong> Focused on improving vocabulary, pronunciation, and spelling skills.</li>
+                    <li><strong>Inter-Class Quiz Competition:</strong> Tested students' knowledge and problem-solving abilities in core subjects.</li>
+                </ul>
+                <h4>Participating Classes</h4>
+                <p>Students from different class levels competed, with representatives selected after an internal screening process.</p>
+                <h5>Competition Results</h5>
+                <ul>
+                    <li><strong>JSS1 vs JSS2:</strong> Kuforiji Irewole & Moses Amirah (JSS1) vs Peter Emmanuel & Akinpelu Gbebemi (JSS2)</li>
+                    <li><strong>JSS2 vs JSS3:</strong> Akinpelu Gbebemi & Peter Emmanuel (JSS2) vs Ajibade Nobeel & Francis Samuel (JSS3)</li>
+                    <li><strong>SSS1 vs SSS2:</strong> Ewurum Joy & Aihonsu Precious (SSS1) vs Akinpelu Aliyat & Lucky Jessita (SSS2)</li>
+                    <li><strong>SSS1 vs SSS3:</strong> Aihonsu Precious, Amnsat Mustapha & Akindayo Deborah (SSS1) vs Kuforiji Magnify & Akindayo Deborah (SSS3)</li>
+                </ul>
+                <h5>Science Competition</h5>
+                <ul>
+                    <li><strong>SSS1:</strong> Ewurum Joy & Aderaju Sofiat</li>
+                    <li><strong>SSS2:</strong> Olayemi David & Akinpelu Aliyah</li>
+                    <li><strong>SSS3:</strong> Kuforiji Magnify & Adejare Tofunmi</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Cultural Day & Color Week</h3>
+                <p>Congratulations to all students who participated in Cultural Day! We explored South African, Indian, and Chinese cultural meals and attire, making it a vibrant and memorable event. Additionally, our Nursery pupils had an exciting Color Week, engaging in fun games and activities that reinforced color concepts, culminating in a colorful splash celebration.</p>
+            </div>
+
+            <div class="section">
+                <h3>Excursion</h3>
+                <p>Kudos to our students who embarked on an exciting excursion to explore the Nigerian Railway Service and the new Lagos Metropolitan Railway Network. It was an enriching experience that combined education with adventure.</p>
+            </div>
+
+            <div class="section">
+                <h3>Indomie Fans Club</h3>
+                <p>We are excited to introduce the Indomie Fans Club for students who wish to join. Some students have already registered, and more are welcome to be part of this exciting club.</p>
+            </div>
+
+            <div class="section">
+                <h3>School Portal: Easy Access to Results</h3>
+                <p>At Prospect Private School, we strive to keep parents informed about their children's academic progress. Our school portal ensures seamless access to results.</p>
+                <h5>How to Access:</h5>
+                <ol>
+                    <li>Visit <a href="https://www.prospectschool.com.ng" target="_blank">www.prospectschool.com.ng</a> and select E-portal.</li>
+                    <li>Login as a parent or student using the credentials provided by the teacher.</li>
+                    <li>Alternatively, visit <a href="https://www.edstream.com.ng" target="_blank">www.edstream.com.ng</a> and follow the same login steps.</li>
+                </ol>
+            </div>
+
+            <section class="container my-5">
+              <h2 class="text-primary text-center">Coding Program: Why Coding Matters for Students</h2>
+              <p>In today’s fast-changing world, skills that empower young minds are more important than ever. Two programs that have proven to be invaluable for students in Nigerian private schools are coding and music. These disciplines not only enrich learning but also prepare students for a successful future.</p>
+              <h3 class="text-secondary">Why Students Should Learn Coding</h3>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Builds Logical Thinking and Problem-Solving Skills:</strong> Coding helps students develop structured thinking, breaking problems into smaller steps and solving them efficiently.</li>
+                  <li class="list-group-item"><strong>Prepares Students for the Digital Future:</strong> With technology influencing every industry, coding provides a significant advantage in an increasingly digital world.</li>
+                  <li class="list-group-item"><strong>Enhances Creativity:</strong> Students can create apps, games, and websites, turning their ideas into reality.</li>
+                  <li class="list-group-item"><strong>Boosts Career Opportunities:</strong> Coding skills make students more competitive in the evolving job market.</li>
+                  <li class="list-group-item"><strong>Encourages Resilience and Persistence:</strong> Debugging errors teaches patience and perseverance, essential life skills.</li>
+              </ul>
+          </section>
+          
+          <section class="container my-5">
+              <h2 class="text-primary text-center">Music: Why Music Education is Essential</h2>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Improves Brain Development and Academic Performance:</strong> Learning music enhances memory, concentration, and cognitive skills.</li>
+                  <li class="list-group-item"><strong>Enhances Emotional Intelligence and Expression:</strong> Music helps students express their emotions and build confidence.</li>
+                  <li class="list-group-item"><strong>Strengthens Social and Teamwork Skills:</strong> Group performances teach coordination and cooperation.</li>
+                  <li class="list-group-item"><strong>Boosts Creativity and Innovation:</strong> Experimenting with sounds and melodies fosters innovative thinking.</li>
+                  <li class="list-group-item"><strong>Provides Career and Scholarship Opportunities:</strong> Many institutions offer scholarships to talented musicians.</li>
+              </ul>
+          </section>
+          
+          <section class="container my-5">
+              <h2 class="text-primary text-center">The Power of a Balanced Education</h2>
+              <p>By incorporating both coding and music into school programs, students receive a well-rounded education that prepares them for the future. Coding sharpens their analytical skills, while music nurtures creativity and emotional intelligence.</p>
+              <p class="text-center font-weight-bold">📢 Encourage your child to explore coding and music today! 🚀🎶</p>
+          </section>
+          
+          <section class="container my-5">
+              <h2 class="text-danger text-center">Discipline And School Policies</h2>
+              <p>We remind parents and students about our school's discipline policies. We enforce a zero-tolerance policy for bullying, examination malpractice, and the use of unauthorized gadgets on campus. Parents are encouraged to support the school in maintaining discipline by ensuring students adhere to uniform regulations and punctuality.</p>
+          </section>
+          
+          <section class="container my-5">
+              <h2 class="text-success text-center">School Fees</h2>
+              <p>We appreciate parents for their prompt payments. Please be reminded that all fees must be paid two weeks before and no later than two weeks after resumption to ensure the smooth running of the school. Payments can be made through the school portal.</p>
+          </section>
+          
+          <section class="container my-5">
+              <h2 class="text-warning text-center">3rd Term Highlights</h2>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">📅 <strong>Resumption:</strong> April 28, 2025</li>
+                  <li class="list-group-item">🏆 <strong>Leadership Training:</strong> For senior students</li>
+                  <li class="list-group-item">🧮 <strong>Mathematical Week:</strong> Enhancing problem-solving skills</li>
+                  <li class="list-group-item">🎉 <strong>Children’s Day:</strong> May 27, 2025</li>
+                  <li class="list-group-item">🎓 <strong>Valedictory & End-of-Session Party:</strong> Celebrating achievements</li>
+              </ul>
+          </section>
+          
+          <section class="container my-5 text-center">
+              <p>We sincerely appreciate our teachers, staff, and parents for their continuous support in ensuring a productive term. We wish all our students a joyful and restful holiday and look forward to another successful term ahead!</p>
+          </section>
+          
+        </div>
+    </div>
 </body>
 </html>

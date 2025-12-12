@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>End of Term Newsletter | Prospect Private School</title>
+  <title>First Term Newsletter | Prospect Private School</title>
   
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -24,6 +24,8 @@
       --light: #f8fafc;
       --gray: #94a3b8;
       --light-gray: #e2e8f0;
+      --purple: #8b5cf6;
+      --wine: #b91c1c;
     }
     
     body {
@@ -111,12 +113,25 @@
       margin: 1.5rem 0;
     }
     
+    .warning-box {
+      background-color: rgba(245, 158, 11, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0;
+    }
+    
     .feature-card {
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
       margin-bottom: 1.5rem;
       border: 1px solid var(--light-gray);
+      transition: transform 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-3px);
     }
     
     .feature-card-header {
@@ -207,6 +222,37 @@
       margin: 1rem 0;
     }
     
+    .house-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 1rem 0;
+    }
+    
+    .house-badge {
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      color: white;
+      font-weight: 600;
+    }
+    
+    .house-blue {
+      background-color: #3b82f6;
+    }
+    
+    .house-yellow {
+      background-color: #f59e0b;
+      color: #1e293b;
+    }
+    
+    .house-wine {
+      background-color: #b91c1c;
+    }
+    
+    .house-purple {
+      background-color: #8b5cf6;
+    }
+    
     .footer {
       background-color: var(--dark);
       color: white;
@@ -233,6 +279,15 @@
       font-weight: 500;
     }
     
+    .holiday-greeting {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(16, 185, 129, 0.1));
+      border-radius: 10px;
+      padding: 2rem;
+      text-align: center;
+      margin: 2rem 0;
+      border: 2px dashed var(--secondary);
+    }
+    
     @media (max-width: 768px) {
       .header {
         padding: 2rem 0;
@@ -245,6 +300,10 @@
       .newsletter-body {
         padding: 1.5rem;
       }
+      
+      .house-badges {
+        justify-content: center;
+      }
     }
   </style>
 </head>
@@ -253,8 +312,8 @@
   <!-- Header -->
   <div class="header">
     <div class="container text-center">
-      <h1>End of Term Newsletter</h1>
-      <p class="lead">Session Highlights & Upcoming Programs</p>
+      <h1>First Term Newsletter</h1>
+      <p class="lead">2025/2026 Academic Session Highlights & Second Term Preview</p>
     </div>
   </div>
 
@@ -266,7 +325,7 @@
         <img src="images/prospect-school-logo.jpeg" alt="Prospect Private School Logo">
         <h1>Prospect Private School</h1>
         <p class="subtitle">Building Future Leaders Through Quality Education</p>
-        <span class="badge badge-pill badge-light">Term 3, 2024/2025 Session</span>
+        <span class="badge badge-pill badge-light">First Term, 2025/2026 Session</span>
       </div>
       
       <!-- Newsletter Body -->
@@ -274,73 +333,278 @@
         <!-- Opening Message -->
         <div class="section">
           <p class="lead">Dear Parents and Guardians,</p>
-          <p>As we wrap up another vibrant and productive session, we give all glory to God for His continuous mercy and grace. He has been our help in ages past and our hope for years to come. We also extend our heartfelt appreciation to our wonderful parents for your consistent support, encouragement, and trust.</p>
-          <p>This session has been filled with growth, achievements, and memorable experiences for the management, staff, and our learners across both the primary and secondary sections.</p>
+          <p>As we conclude the First Term of the 2025/2026 academic session, we give all glory to God for His unfailing mercy, guidance, and abundant grace. He has remained our strength, our helper, and our constant source of support. We also extend our heartfelt appreciation to our wonderful parents and guardians for your continuous cooperation, encouragement, and trust in our school.</p>
+          <p>We equally appreciate our dedicated teachers for their tireless efforts, commitment, and passion in nurturing our learners and ensuring academic excellence throughout the term.</p>
+          <p>This term has been marked by growth, progress, and remarkable achievements for the management, staff, and our learners across all levels.</p>
         </div>
         
-        <!-- Highlights Section -->
+        <!-- Term Highlights Section -->
         <div class="section">
-          <h2 class="section-title">Session Highlights</h2>
+          <h2 class="section-title">During The Term</h2>
           
           <div class="row">
-            <!-- Learning Beyond Classroom -->
+            <!-- Inter-Class Competitions -->
             <div class="col-md-6">
               <div class="feature-card">
                 <div class="feature-card-header">
-                  <i class="fas fa-bus mr-2"></i> Learning Beyond the Classroom
+                  <i class="fas fa-trophy mr-2"></i> Inter-Class Competitions
                 </div>
                 <div class="feature-card-body">
-                  <p>Our students embarked on an exciting educational trip to the Train Museum in Lagos State. It was a hands-on learning experience that brought classroom knowledge to life and deepened their understanding of transportation and infrastructure in our country.</p>
+                  <p>Students across all levels actively participated in various inter-class academic competitions, including Mathematics Quiz, Spelling Bee, Debate, and other skill-building activities designed to enhance teamwork, confidence, and academic excellence.</p>
                 </div>
               </div>
             </div>
             
-            <!-- WAEC Approval -->
+            <!-- Class Platforms -->
             <div class="col-md-6">
               <div class="feature-card">
                 <div class="feature-card-header">
-                  <i class="fas fa-award mr-2"></i> WAEC Approval – A Big Win!
+                  <i class="fas fa-comments mr-2"></i> Introduction of Class Platforms
                 </div>
                 <div class="feature-card-body">
-                  <p>We are thrilled to announce that our secondary school has been officially approved to conduct the WAEC examination. Our first sitting was held between May and June. This milestone opens new doors of opportunity for our students' academic future.</p>
+                  <p>Class WhatsApp platforms were introduced for smoother communication between teachers and parents. This has improved follow-up on assignments, announcements, and overall academic monitoring.</p>
                 </div>
               </div>
             </div>
             
-            <!-- CBT Introduction -->
+            <!-- Career Choice Seminar -->
             <div class="col-md-6">
               <div class="feature-card">
                 <div class="feature-card-header">
-                  <i class="fas fa-laptop-code mr-2"></i> CBT Introduction
+                  <i class="fas fa-briefcase mr-2"></i> Career Choice Seminar
                 </div>
                 <div class="feature-card-body">
-                  <p>We proudly launched our Computer-Based Testing (CBT) system this session with outstanding success. Both students and teachers adapted quickly to the new format, setting a strong foundation for modern assessment.</p>
+                  <p>Students received guidance on selecting appropriate subjects and pathways for their future careers.</p>
                 </div>
               </div>
             </div>
             
-            <!-- Color Week Celebration -->
+            <!-- Excursion to Indomie Factory -->
             <div class="col-md-6">
               <div class="feature-card">
                 <div class="feature-card-header">
-                  <i class="fas fa-palette mr-2"></i> Colour Week Celebration
+                  <i class="fas fa-industry mr-2"></i> Excursion to the Indomie Factory
                 </div>
                 <div class="feature-card-body">
-                  <p>Our Preschool, Pre-Nursery, and Nursery sections enjoyed a vibrant Colour Week. Each day featured different themed colors with fun activities and expressive arts that made the week both educational and exciting.</p>
+                  <p>The excursion gave students a hands-on learning experience, exposing them to industrial processes, hygiene practices, and modern packaging techniques.</p>
                 </div>
               </div>
             </div>
             
-            <!-- Inter-Class Competition -->
+            <!-- Independence Day Rally -->
+            <div class="col-md-6">
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <i class="fas fa-flag mr-2"></i> Independence Day Rally
+                </div>
+                <div class="feature-card-body">
+                  <p>Students proudly represented the school during the Independence Day rally, participating in interviews and showcasing discipline, patriotism, and confidence.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Excellent WAEC Results -->
+            <div class="col-md-6">
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <i class="fas fa-award mr-2"></i> Excellent WAEC Results
+                </div>
+                <div class="feature-card-body">
+                  <p>This session marked a milestone—our first-ever WAEC examination conducted within the school premises. Although students have written WAEC for years, this was the inaugural in-house sitting. The results were outstanding, and the processing of students into tertiary institutions is currently ongoing.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Food Competition -->
+            <div class="col-md-6">
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <i class="fas fa-utensils mr-2"></i> Food Competition
+                </div>
+                <div class="feature-card-body">
+                  <p>Students showcased their creativity during the inter-class food competition, preparing different cuisines and demonstrating impressive culinary skills.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Introduction of CBT Exams -->
+            <div class="col-md-6">
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <i class="fas fa-laptop-code mr-2"></i> Introduction of CBT Exams
+                </div>
+                <div class="feature-card-body">
+                  <p>The school fully integrated Computer-Based Testing (CBT) as part of its assessment system. This innovation has improved speed, accuracy, and record-keeping, while preparing students for modern exams such as the WAEC CBT format.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Christmas Carol -->
             <div class="col-md-12">
               <div class="feature-card">
-                <div class="feature-card-header">
-                  <i class="fas fa-trophy mr-2"></i> Inter-Class Competition
+                <div class="feature-card-header" style="background-color: var(--wine);">
+                  <i class="fas fa-music mr-2"></i> Christmas Carol
                 </div>
                 <div class="feature-card-body">
-                  <p>Students showcased their talents in academics, sports, and creative challenges. This event fostered healthy rivalry, teamwork, and confidence among all participants.</p>
+                  <p>The term ended on a joyful note with a beautiful Christmas Carol event, filled with music, choreography, and festive presentations.</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Second Term Activities -->
+        <div class="section">
+          <h2 class="section-title">Second Term Activities (Upcoming)</h2>
+          
+          <div class="highlight-box">
+            <h5><i class="fas fa-calendar-check mr-2"></i> Resumption Date</h5>
+            <p class="mb-0"><strong>Students resume for Second Term on 5th January, 2026.</strong></p>
+          </div>
+          
+          <!-- Interhouse Sports -->
+          <div class="feature-card">
+            <div class="feature-card-header" style="background-color: var(--purple);">
+              <i class="fas fa-running mr-2"></i> 5th Biennial Interhouse Sports Competition
+            </div>
+            <div class="feature-card-body">
+              <div class="house-badges">
+                <span class="house-badge house-blue">Blue House</span>
+                <span class="house-badge house-yellow">Yellow House</span>
+                <span class="house-badge house-wine">Wine House</span>
+                <span class="house-badge house-purple">Purple House</span>
+              </div>
+              <p><strong>Fee:</strong> ₦20,000</p>
+            </div>
+          </div>
+          
+          <!-- Cultural Day -->
+          <div class="feature-card">
+            <div class="feature-card-header" style="background-color: var(--accent); color: var(--dark);">
+              <i class="fas fa-globe-africa mr-2"></i> Cultural Day Celebration
+            </div>
+            <div class="feature-card-body">
+              <p>Parents may choose one of the following options:</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="program-card">
+                    <div class="program-card-header">
+                      Option 1
+                    </div>
+                    <div class="program-card-body">
+                      <div class="program-price">₦10,000</div>
+                      <p>For students whose cultural attires will be provided by the school</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="program-card">
+                    <div class="program-card-header">
+                      Option 2
+                    </div>
+                    <div class="program-card-body">
+                      <div class="program-price">₦5,000</div>
+                      <p>For students providing their own attires</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Second WAEC Sitting -->
+          <div class="feature-card">
+            <div class="feature-card-header">
+              <i class="fas fa-graduation-cap mr-2"></i> Second WAEC Sitting
+            </div>
+            <div class="feature-card-body">
+              <p>The second WAEC examination will be conducted in our school next term.</p>
+            </div>
+          </div>
+          
+          <!-- Giving Day -->
+          <div class="feature-card">
+            <div class="feature-card-header" style="background-color: var(--secondary);">
+              <i class="fas fa-hands-helping mr-2"></i> Giving Day
+            </div>
+            <div class="feature-card-body">
+              <p>Giving Day is an annual outreach where we visit orphanage homes to share love and items. Students may bring:</p>
+              <ul>
+                <li>Toiletries</li>
+                <li>Stationeries</li>
+                <li>Food items</li>
+                <li>Good clothes, shoes, or bags</li>
+                <li>Monetary donations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- School Club Enrollment -->
+        <div class="section">
+          <h2 class="section-title">School Club Enrollment</h2>
+          <p>All students are encouraged to join one of the following clubs as part of our extracurricular development program:</p>
+          
+          <div class="row">
+            <!-- Art Club -->
+            <div class="col-md-12">
+              <div class="feature-card">
+                <div class="feature-card-header" style="background-color: #8b5cf6;">
+                  <i class="fas fa-paint-brush mr-2"></i> Art Club
+                </div>
+                <div class="feature-card-body">
+                  <p>The Art Club, newly introduced this term, has been one of the most active and impactful clubs in the school. Pupils and students engage in hands-on creative activities such as paper mâché, drawing, painting, and other practical projects. A major achievement this term is the beautiful mural painted on the school wall—designed and executed entirely by Art Club members. The club continues to nurture creativity, imagination, and confidence in artistic expression.</p>
+                  <div class="warning-box">
+                    <p><i class="fas fa-exclamation-circle mr-2"></i> <strong>Important Notice:</strong> Parents are kindly informed that beginning from next term, pupils and students enrolled in the Art Club will be required to make a small contribution to support practical activities such as tie-and-dye, batik, paper crafts, and other creative projects. The exact amount will be communicated in due time.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Coding Club -->
+            <div class="col-md-6">
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <i class="fas fa-code mr-2"></i> Coding Club
+                </div>
+                <div class="feature-card-body">
+                  <p>Coding has become an essential skill for every 21st-century learner. In our school, Coding classes help pupils and students develop digital literacy, logical thinking, and problem-solving abilities. This program is especially important as future WAEC examinations will be conducted using CBT. Parents are strongly encouraged to ensure their children participate so they can gain the technological skills necessary for academic success.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Music Club -->
+            <div class="col-md-6">
+              <div class="feature-card">
+                <div class="feature-card-header" style="background-color: #ef4444;">
+                  <i class="fas fa-music mr-2"></i> Music Club
+                </div>
+                <div class="feature-card-body">
+                  <p>The Music program allows students to explore various musical instruments, develop rhythm, and improve their listening and coordination skills. Through singing, instrumental training, and performance practice, pupils enhance their creativity and self-expression. Music continues to play a key role in building confidence and enriching the cultural life of the school.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Digitalized ID Card -->
+        <div class="section">
+          <h2 class="section-title">Digitalized ID Card Implementation</h2>
+          <div class="feature-card">
+            <div class="feature-card-header" style="background-color: var(--dark);">
+              <i class="fas fa-id-card mr-2"></i> Important Announcement
+            </div>
+            <div class="feature-card-body">
+              <p>Parents are hereby informed that beginning next term, the school will fully implement the use of Digitalized ID Cards for all pupils and students. A scanning machine will be installed at the school entrance, and students will be required to scan their ID cards before entering the school premises each day.</p>
+              
+              <div class="highlight-box">
+                <ul class="mb-0">
+                  <li>The cost of the Digitalized ID Card is <strong>₦5,000</strong>.</li>
+                  <li>Parents who have already paid ₦2,000 will be required to pay an additional ₦3,000 to complete the payment.</li>
+                </ul>
+              </div>
+              
+              <p class="mt-3"><strong>Please note that this payment is compulsory,</strong> as the ID card will be used for security, attendance tracking, and proper documentation.</p>
             </div>
           </div>
         </div>
@@ -352,163 +616,134 @@
           <div class="timeline">
             <div class="timeline-item">
               <div class="timeline-dot"></div>
-              <div class="timeline-date">Monday, 15th September 2025</div>
+              <div class="timeline-date">5th January 2026</div>
               <div class="timeline-content">
-                <h5>School Resumption</h5>
-                <p>All students return for the new academic session</p>
+                <h5>Resumption for Second Term</h5>
+                <p>All students return for the second term</p>
               </div>
             </div>
             
             <div class="timeline-item">
               <div class="timeline-dot"></div>
-              <div class="timeline-date">15th September - 15th December 2025</div>
+              <div class="timeline-date">14th February 2026</div>
               <div class="timeline-content">
-                <h5>WAEC Registration Period</h5>
-                <p>Registration opens for West African Examinations Council</p>
+                <h5>Giving Day</h5>
+                <p>Annual outreach to orphanage homes</p>
               </div>
             </div>
             
             <div class="timeline-item">
               <div class="timeline-dot"></div>
-              <div class="timeline-date">15th September - 17th December 2025</div>
+              <div class="timeline-date">16th–18th February 2026</div>
               <div class="timeline-content">
-                <h5>BECE Registration Period</h5>
-                <p>Registration for Basic Education Certificate Examination</p>
+                <h5>Midterm Test</h5>
+                <p>Second term midterm examinations</p>
               </div>
             </div>
             
             <div class="timeline-item">
               <div class="timeline-dot"></div>
-              <div class="timeline-date">15th October 2025 - 15th January 2026</div>
+              <div class="timeline-date">18th February 2026</div>
               <div class="timeline-content">
-                <h5>FSLC Registration Period</h5>
-                <p>Registration for First School Leaving Certificate</p>
+                <h5>Cultural Day</h5>
+                <p>Cultural celebration and display</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">19th–20th February 2026</div>
+              <div class="timeline-content">
+                <h5>Midterm Break</h5>
+                <p>Short break after midterm tests</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">14th March 2026</div>
+              <div class="timeline-content">
+                <h5>Interhouse Sport</h5>
+                <p>5th Biennial Interhouse Sports Competition</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">27th April 2026</div>
+              <div class="timeline-content">
+                <h5>End of Second Term</h5>
+                <p>Second term concludes</p>
               </div>
             </div>
           </div>
         </div>
         
-        <!-- Summer Boot Camp -->
+        <!-- School Fees Policy -->
         <div class="section">
-          <h2 class="section-title">Summer Boot Camp</h2>
-          <p>To keep our students intellectually active during the holiday, we are excited to offer a Summer Boot Camp. This intensive and fun-filled academic camp will help learners strengthen key subjects, build confidence, and develop valuable study habits.</p>
-          
-          <div class="highlight-box">
-            <p><i class="fas fa-calendar-alt mr-2"></i> <strong>Date:</strong> 5th August – 29th August 2025</p>
-            <p><i class="fas fa-clock mr-2"></i> <strong>Time:</strong> 9:00am – 2:00pm daily</p>
+          <h2 class="section-title">School Fees Payment Policy</h2>
+          <p>Parents are kindly reminded that:</p>
+          <div class="alert alert-info">
+            <i class="fas fa-exclamation-circle mr-2"></i> <strong>School fees must be paid 2 weeks before resumption, and no later than 2 weeks after resumption. 100% payment is required within this period.</strong>
           </div>
+          <p>Your compliance enables the school to run smoothly and provide quality service to our learners.</p>
           
-          <div class="row">
-            <div class="col-md-4">
-              <div class="program-card">
-                <div class="program-card-header">
-                  Secondary School
-                </div>
-                <div class="program-card-body">
-                  <div class="program-price">₦10,000</div>
-                  <p>Intensive subject reinforcement and skill development</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="program-card">
-                <div class="program-card-header">
-                  Primary School
-                </div>
-                <div class="program-card-body">
-                  <div class="program-price">₦7,000</div>
-                  <p>Fun learning activities and foundational skills</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="program-card">
-                <div class="program-card-header">
-                  Preschool/Nursery
-                </div>
-                <div class="program-card-body">
-                  <div class="program-price">₦5,000</div>
-                  <p>Engaging early learning activities</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- New Programs -->
-        <div class="section">
-          <h2 class="section-title">New Programs Starting Next Term</h2>
-          
-          <div class="row">
-            <div class="col-md-6">
-              <div class="feature-card">
-                <div class="feature-card-header bg-success">
-                  <i class="fas fa-code mr-2"></i> Compulsory Coding Classes
-                </div>
-                <div class="feature-card-body">
-                  <p>In line with global trends and 21st-century skills development, coding will be compulsory for all pupils and students from next term. This will equip them with:</p>
-                  <ul>
-                    <li>Problem-solving skills</li>
-                    <li>Logical thinking</li>
-                    <li>Digital literacy</li>
-                    <li>Creativity and innovation</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-6">
-              <div class="feature-card">
-                <div class="feature-card-header bg-warning text-dark">
-                  <i class="fas fa-users mr-2"></i> School Clubs Enrollment
-                </div>
-                <div class="feature-card-body">
-                  <p>All students must join one of the following clubs as part of our extracurricular development program:</p>
-                  <ul>
-                    <li><strong>Music Club</strong> - Develop musical talents</li>
-                    <li><strong>JET Club</strong> - Junior Engineers, Technicians, and Scientists</li>
-                    <li><strong>Art Club</strong> - Creative expression</li>
-                  </ul>
-                  <p class="mt-3"><em>Parents should enroll their children before resumption.</em></p>
-                </div>
-              </div>
-            </div>
+          <div class="warning-box">
+            <h5><i class="fas fa-percentage mr-2"></i> School Fees Discount Update</h5>
+            <p>Parents are kindly informed of the following adjustments to the school fees discount policy:</p>
+            <ul class="mb-0">
+              <li>There will no longer be a school fees discount for parents with three children.</li>
+              <li>The discount will now begin from four children, and only 50% discount will be applied to the fourth child.</li>
+            </ul>
+            <p class="mt-2 mb-0"><em>We appreciate your understanding and cooperation as these changes take effect.</em></p>
           </div>
         </div>
         
         <!-- Result Checking -->
         <div class="section">
-          <h2 class="section-title">Result Checking</h2>
-          <p>End-of-term results are now available on the school portal:</p>
+          <h2 class="section-title">How To Check Results</h2>
           
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5><i class="fas fa-laptop mr-2 text-primary"></i> How to Access Results</h5>
-              <ol>
-                <li>Visit <a href="https://www.prospectschool.com.ng" target="_blank">www.prospectschool.com.ng</a> and select E-portal</li>
-                <li>Login as a parent or student using credentials provided</li>
-                <li>Alternatively, visit <a href="https://www.edstream.com.ng" target="_blank">www.edstream.com.ng</a></li>
-              </ol>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <i class="fas fa-laptop mr-2"></i> Option 1
+                </div>
+                <div class="feature-card-body">
+                  <ol class="pl-3">
+                    <li>Visit <a href="https://www.prospectschool.com.ng" target="_blank">www.prospectschool.com.ng</a></li>
+                    <li>Select E-Portal</li>
+                    <li>Login using your parent or student credentials</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <i class="fas fa-globe mr-2"></i> Option 2
+                </div>
+                <div class="feature-card-body">
+                  <p>Visit <a href="https://www.edstream.com.ng" target="_blank">www.edstream.com.ng</a></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         
-        <!-- School Fees -->
-        <div class="section">
-          <h2 class="section-title">School Fees</h2>
-          <p>We sincerely appreciate all parents who made timely fee payments this term. Your support enables us to maintain quality education, retain dedicated staff, and improve our facilities.</p>
-          <div class="alert alert-info">
-            <i class="fas fa-info-circle mr-2"></i> <strong>Important:</strong> All payments must be made within 2 weeks before and 2 weeks after resumption.
-          </div>
+        <!-- Season's Greetings -->
+        <div class="holiday-greeting">
+          <h3 class="mb-3"><i class="fas fa-star mr-2"></i> Season's Greetings</h3>
+          <p class="lead">We wish all our esteemed parents and wonderful students a Merry Christmas and a Happy New Year.</p>
+          <p>May the holidays bring you joy, rest, and renewed strength for the coming term.</p>
+          <p class="mt-4"><strong>Thank you for your trust and partnership.</strong></p>
         </div>
         
         <!-- Closing Message -->
         <div class="section text-center">
-          <p class="lead">Thank you for your continued partnership in shaping the minds and hearts of tomorrow.</p>
-          <p>We wish you and your family a restful, joyful, and safe holiday.</p>
           <p><strong>The Prospect Private School Team</strong></p>
+          <p class="text-muted">Building Future Leaders Through Quality Education</p>
         </div>
       </div>
     </div>

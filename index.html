@@ -7,27 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   <!-- SEO Meta Tags -->
-  <meta name="keywords" content="Prospect Private School, Great Prospect Private School, private education, quality learning, creative thinking, problem solving, academic excellence, school in [ijagba obasanjo sango ota]" />
-  <meta name="description" content="Great Prospect Private School: Nurturing a community of learners inspired to think creatively, solve problems effectively, and achieve their goals. Discover quality private education today!" />
+  <meta name="keywords" content="Prospect Private School, Great Prospect Private School, private education, quality learning, creative thinking, problem solving, academic excellence, school in [ijagba obasanjo sango ota], STEM education, coding for kids, digital learning, technology in education" />
+  <meta name="description" content="Great Prospect Private School: Where traditional education meets innovative technology. Nurturing future-ready learners with STEM, coding, and digital literacy for the 21st century." />
   <meta name="author" content="Prospect Private School" />
   
   <!-- Social Media Meta Tags (Open Graph for Facebook, Twitter Cards) -->
-  <meta property="og:title" content="Great Prospect Private School - Excellence in Education" />
-  <meta property="og:description" content="Nurturing a community of learners who think creatively, solve problems, and achieve their goals. Join our academic journey today!" />
+  <meta property="og:title" content="Prospect Private School - Education Meets Innovation" />
+  <meta property="og:description" content="Blending traditional excellence with cutting-edge technology. Preparing students for the digital future through STEM, coding, and innovative learning." />
   <meta property="og:image" content="https://www.prospectschool.com.ng/images/prospect-school-logo.jpeg" />
   <meta property="og:url" content="https://www.prospectschool.com.ng" />
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Great Prospect Private School - Excellence in Education" />
-  <meta name="twitter:description" content="Discover quality private education with a focus on creativity, problem-solving, and academic success!" />
+  <meta name="twitter:title" content="Prospect Private School - Education Meets Innovation" />
+  <meta name="twitter:description" content="Discover tech-integrated education with focus on STEM, coding, and 21st century skills for future leaders!" />
   <meta name="twitter:image" content="https://www.prospectschool.com.ng/images/prospect-school-logo.jpeg" />
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://www.prospectschool.com.ng" />
 
   <!-- Title -->
-  <title>Great Prospect Private School | Quality Private Education</title>
+  <title>Prospect Private School | Education Innovation & Technology</title>
 
   <!-- Favicons -->
   <link rel="icon" href="images/prospect-school-logo.jpeg" type="image/jpeg">
@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
   <!-- Fonts and Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- Animate.css -->
@@ -54,17 +54,25 @@
     :root {
       --primary-color: #2563eb;
       --primary-light: #3b82f6;
+      --primary-dark: #1d4ed8;
       --secondary-color: #10b981;
-      --accent-color: #f59e0b;
-      --dark-color: #1e293b;
+      --secondary-light: #34d399;
+      --accent-color: #8b5cf6;
+      --accent-light: #a78bfa;
+      --tech-blue: #0ea5e9;
+      --tech-purple: #8b5cf6;
+      --tech-green: #10b981;
+      --dark-color: #0f172a;
       --light-color: #f8fafc;
       --gray-light: #e2e8f0;
       --gray-medium: #94a3b8;
-      --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      --gradient-tech: linear-gradient(135deg, var(--primary-color), var(--tech-purple));
+      --gradient-innovation: linear-gradient(135deg, var(--tech-blue), var(--tech-green));
       --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
       --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
       --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
       --shadow-xl: 0 20px 50px rgba(0,0,0,0.15);
+      --shadow-tech: 0 0 30px rgba(37, 99, 235, 0.2);
       --rounded-sm: 0.25rem;
       --rounded-md: 0.5rem;
       --rounded-lg: 0.75rem;
@@ -72,67 +80,88 @@
     }
     
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Inter', sans-serif;
       overflow-x: hidden;
       color: var(--dark-color);
       background-color: var(--light-color);
       line-height: 1.6;
+      padding-top: 70px; /* Added for fixed navbar */
     }
     
-    /* Modern Navbar */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+    
+    /* Improved Modern Tech Navbar */
     .navbar {
-      padding: 1rem 0;
+      padding: 0.6rem 0;
       background: rgba(255, 255, 255, 0.98) !important;
-      backdrop-filter: blur(8px);
+      backdrop-filter: blur(10px);
       box-shadow: var(--shadow-sm);
       transition: all 0.3s ease;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+      min-height: 70px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
     }
     
     .navbar.scrolled {
-      padding: 0.75rem 0;
-      background: rgba(30, 41, 59, 0.98) !important;
-      box-shadow: var(--shadow-md);
+      background: rgba(15, 23, 42, 0.98) !important;
+      box-shadow: var(--shadow-lg);
+      padding: 0.4rem 0;
     }
     
-    .navbar.scrolled .navbar-brand span,
+    .navbar.scrolled .navbar-brand,
     .navbar.scrolled .nav-link {
       color: white !important;
     }
     
     .navbar.scrolled .nav-link:hover {
-      color: var(--secondary-color) !important;
+      color: var(--tech-blue) !important;
+    }
+    
+    .navbar.scrolled .navbar-toggler-icon,
+    .navbar.scrolled .navbar-toggler-icon:before,
+    .navbar.scrolled .navbar-toggler-icon:after {
+      background-color: white;
     }
     
     .navbar-brand {
       display: flex;
       align-items: center;
-      font-weight: 700;
+      font-weight: 800;
       font-size: 1.4rem;
       font-family: 'Montserrat', sans-serif;
       letter-spacing: 0.5px;
+      background: var(--gradient-tech);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-right: 0;
+      padding: 0.5rem 0;
     }
     
     .navbar-brand img {
-      height: 42px;
-      margin-right: 12px;
+      height: 40px;
+      margin-right: 10px;
       transition: all 0.3s ease;
       border-radius: 50%;
-    }
-    
-    .navbar-brand span {
-      color: var(--dark-color);
-      transition: all 0.3s ease;
+      box-shadow: var(--shadow-md);
     }
     
     .nav-link {
-      font-weight: 500;
+      font-weight: 600;
       padding: 0.5rem 1rem !important;
-      margin: 0 0.25rem;
+      margin: 0 0.15rem;
       color: var(--dark-color) !important;
       position: relative;
       transition: all 0.3s ease;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
+      text-align: center;
     }
     
     .nav-link:after {
@@ -143,12 +172,12 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      background-color: var(--primary-color);
+      background: var(--gradient-tech);
       transition: all 0.3s ease;
     }
     
     .nav-link:hover:after {
-      width: 60%;
+      width: 70%;
     }
     
     .nav-link:hover {
@@ -160,12 +189,16 @@
     }
     
     .nav-item.active .nav-link:after {
-      width: 60%;
+      width: 70%;
     }
     
+    /* Improved Mobile Toggler */
     .navbar-toggler {
       border: none;
       padding: 0.5rem;
+      background: transparent;
+      outline: none;
+      cursor: pointer;
     }
     
     .navbar-toggler:focus {
@@ -174,11 +207,11 @@
     }
     
     .navbar-toggler-icon {
-      background-image: none;
-      position: relative;
+      display: block;
       width: 24px;
       height: 2px;
       background-color: var(--dark-color);
+      position: relative;
       transition: all 0.3s ease;
     }
     
@@ -189,15 +222,16 @@
       width: 24px;
       height: 2px;
       background-color: var(--dark-color);
+      left: 0;
       transition: all 0.3s ease;
     }
     
     .navbar-toggler-icon:before {
-      transform: translateY(-7px);
+      top: -8px;
     }
     
     .navbar-toggler-icon:after {
-      transform: translateY(7px);
+      top: 8px;
     }
     
     .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
@@ -206,19 +240,53 @@
     
     .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
       transform: rotate(45deg);
+      top: 0;
     }
     
     .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
       transform: rotate(-45deg);
+      top: 0;
     }
     
-    /* Hero Section */
+    /* Improved Mobile Navbar Menu */
+    .navbar-collapse {
+      background: rgba(255, 255, 255, 0.98);
+      border-radius: var(--rounded-lg);
+      box-shadow: var(--shadow-lg);
+      margin-top: 1rem;
+      padding: 1rem;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+    
+    .navbar.scrolled .navbar-collapse {
+      background: rgba(15, 23, 42, 0.98);
+    }
+    
+    @media (max-width: 991px) {
+      .navbar-nav {
+        text-align: center;
+      }
+      
+      .nav-item {
+        margin: 0.5rem 0;
+      }
+      
+      .nav-link {
+        padding: 0.75rem 1rem !important;
+        font-size: 1rem;
+      }
+    }
+    
+    /* Hero Section - Tech Focused */
     .hero_section {
-      padding: 8rem 0 5rem;
+      padding: 5rem 0 4rem;
       position: relative;
       overflow: hidden;
-      background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+      background: linear-gradient(135deg, #0f172a, #1e293b);
       color: white;
+      margin-top: -70px;
+      padding-top: 9rem;
     }
     
     .hero_section:before {
@@ -228,8 +296,10 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: url('images/dots-pattern.png') repeat;
-      opacity: 0.05;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
       z-index: 0;
     }
     
@@ -238,18 +308,31 @@
       z-index: 1;
     }
     
-    .hero_detail-box h3 {
-      font-size: 1.25rem;
-      font-weight: 400;
-      margin-bottom: 1.25rem;
-      letter-spacing: 1px;
+    .tech-badge {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 0.5rem 1.25rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .tech-badge i {
+      margin-right: 0.5rem;
+      color: var(--tech-blue);
     }
     
     .hero_detail-box h1 {
-      font-size: 3rem;
-      font-weight: 700;
+      font-size: 2.75rem;
+      font-weight: 800;
       margin-bottom: 1.5rem;
-      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #ffffff, #93c5fd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
       line-height: 1.2;
     }
     
@@ -258,15 +341,56 @@
       margin-bottom: 2rem;
       max-width: 600px;
       opacity: 0.9;
+      color: #cbd5e1;
+    }
+    
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 3rem;
+      flex-wrap: wrap;
+    }
+    
+    .stat-item {
+      text-align: center;
+      flex: 1;
+      min-width: 100px;
+    }
+    
+    .stat-number {
+      font-size: 1.75rem;
+      font-weight: 700;
+      background: var(--gradient-tech);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.25rem;
+    }
+    
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--gray-medium);
     }
     
     .hero_img-container {
       position: relative;
-      border-radius: var(--rounded-lg);
+      border-radius: var(--rounded-xl);
       overflow: hidden;
-      box-shadow: var(--shadow-xl);
-      transform: perspective(1000px) rotateY(-10deg);
+      box-shadow: var(--shadow-tech);
+      transform: perspective(1000px) rotateY(-8deg) rotateX(2deg);
       transition: all 0.5s ease;
+    }
+    
+    .hero_img-container:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(14, 165, 233, 0.2), rgba(139, 92, 246, 0.2));
+      z-index: 1;
+      pointer-events: none;
     }
     
     .hero_img-container img {
@@ -274,14 +398,12 @@
       height: auto;
       display: block;
       transition: transform 0.5s ease;
+      filter: brightness(1.1) contrast(1.1);
     }
     
     .hero_img-container:hover {
-      transform: perspective(1000px) rotateY(0deg);
-    }
-    
-    .hero_img-container:hover img {
-      transform: scale(1.05);
+      transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+      box-shadow: 0 0 50px rgba(14, 165, 233, 0.3);
     }
     
     /* Buttons */
@@ -294,34 +416,65 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      box-shadow: var(--shadow-sm);
       border: none;
       cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      font-size: 0.95rem;
+    }
+    
+    .btn:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: 0.5s;
+    }
+    
+    .btn:hover:before {
+      left: 100%;
     }
     
     .btn-primary {
-      background-color: var(--primary-color);
+      background: var(--gradient-tech);
       color: white;
+      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
     }
     
     .btn-primary:hover {
-      background-color: var(--primary-light);
+      background: linear-gradient(135deg, var(--primary-light), var(--accent-light));
       color: white;
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
     }
     
     .btn-outline-light {
       background-color: transparent;
-      border: 2px solid white;
+      border: 2px solid rgba(255, 255, 255, 0.3);
       color: white;
+      backdrop-filter: blur(10px);
     }
     
     .btn-outline-light:hover {
       background-color: white;
       color: var(--primary-color);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+    }
+    
+    .btn-tech {
+      background: var(--gradient-innovation);
+      color: white;
+      box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+    }
+    
+    .btn-tech:hover {
+      background: linear-gradient(135deg, var(--tech-blue), var(--secondary-light));
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4);
     }
     
     .btn-icon {
@@ -335,28 +488,27 @@
     
     /* Sections */
     .section {
-      padding: 6rem 0;
+      padding: 5rem 0;
       position: relative;
     }
     
     .section-title {
       font-size: 2.25rem;
-      font-weight: 700;
-      margin-bottom: 3rem;
+      font-weight: 800;
+      margin-bottom: 2.5rem;
       position: relative;
       display: inline-block;
-      font-family: 'Montserrat', sans-serif;
       color: var(--dark-color);
     }
     
     .section-title:after {
       content: '';
       position: absolute;
-      width: 50px;
+      width: 60px;
       height: 4px;
       bottom: -12px;
       left: 0;
-      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      background: var(--gradient-tech);
       border-radius: 2px;
     }
     
@@ -373,27 +525,147 @@
       text-align: center;
     }
     
-    /* About Section */
-    .about_section {
-      background-color: white;
+    /* Innovation Showcase */
+    .innovation_section {
+      background: linear-gradient(to bottom, #ffffff, #f0f9ff);
     }
     
-    .about_img-box {
+    .innovation-card {
+      background: white;
       border-radius: var(--rounded-lg);
-      overflow: hidden;
+      padding: 2rem;
       box-shadow: var(--shadow-lg);
-      transition: all 0.5s ease;
+      transition: all 0.4s ease;
+      height: 100%;
+      border: 1px solid var(--gray-light);
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
     }
     
-    .about_img-box img {
-      width: 100%;
-      height: auto;
-      display: block;
-      transition: transform 0.5s ease;
+    .innovation-card:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--gradient-tech);
+      transition: width 0.3s ease;
     }
     
-    .about_img-box:hover img {
-      transform: scale(1.05);
+    .innovation-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+    }
+    
+    .innovation-card:hover:before {
+      width: 8px;
+    }
+    
+    .innovation-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--tech-blue), var(--tech-purple));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      color: white;
+      font-size: 1.25rem;
+      box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+    }
+    
+    /* Tech Programs Section */
+    .tech-programs_section {
+      background: var(--dark-color);
+      color: white;
+    }
+    
+    .tech-programs_section .section-title {
+      color: white;
+    }
+    
+    .program-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: var(--rounded-lg);
+      padding: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.4s ease;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+    
+    .program-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transform: translateY(-8px);
+      border-color: var(--tech-blue);
+      box-shadow: 0 15px 35px rgba(14, 165, 233, 0.15);
+    }
+    
+    .program-card:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-tech);
+    }
+    
+    .program-tag {
+      display: inline-block;
+      padding: 0.25rem 1rem;
+      background: rgba(14, 165, 233, 0.2);
+      color: var(--tech-blue);
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    
+    /* Digital Campus Section */
+    .digital-campus_section {
+      position: relative;
+      background: linear-gradient(to right, #f8fafc, #f0f9ff);
+    }
+    
+    .digital-campus_section:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40%;
+      height: 100%;
+      background: linear-gradient(135deg, var(--tech-blue), var(--tech-purple));
+      opacity: 0.05;
+      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    
+    .digital-feature {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+    }
+    
+    .digital-icon {
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1.25rem;
+      color: var(--tech-blue);
+      font-size: 1.25rem;
+      box-shadow: var(--shadow-md);
+      border: 2px solid var(--gray-light);
     }
     
     /* Gallery Section */
@@ -405,7 +677,7 @@
     
     .gallery-container {
       position: relative;
-      padding: 0 2rem;
+      padding: 0 1rem;
     }
     
     .glide__track {
@@ -422,14 +694,16 @@
       overflow: hidden;
       box-shadow: var(--shadow-md);
       transition: all 0.3s ease;
-      height: 240px;
+      height: 250px;
+      background: var(--dark-color);
     }
     
     .gallery-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.5s ease;
+      transition: all 0.5s ease;
+      filter: brightness(0.95);
     }
     
     .gallery-item:hover {
@@ -439,6 +713,7 @@
     
     .gallery-item:hover img {
       transform: scale(1.1);
+      filter: brightness(1.1);
     }
     
     .gallery-caption {
@@ -447,136 +722,41 @@
       left: 0;
       right: 0;
       padding: 1rem;
-      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
       color: white;
-      transform: translateY(100%);
-      transition: all 0.3s ease;
     }
     
-    .gallery-item:hover .gallery-caption {
-      transform: translateY(0);
+    /* Future Ready Section */
+    .future-ready_section {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
     }
     
-    .glide__arrows {
+    .future-ready_section:before {
+      content: '';
       position: absolute;
-      top: 50%;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      transform: translateY(-50%);
-      z-index: 2;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 30%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
       pointer-events: none;
     }
     
-    .glide__arrow {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: white;
-      border: none;
-      box-shadow: var(--shadow-md);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--primary-color);
-      font-size: 1.25rem;
-      transition: all 0.3s ease;
-      pointer-events: auto;
-    }
-    
-    .glide__arrow:hover {
-      background-color: var(--primary-color);
+    .future-ready_section .section-title {
       color: white;
     }
     
-    .glide__arrow--left {
-      left: -1rem;
-    }
-    
-    .glide__arrow--right {
-      right: -1rem;
-    }
-    
-    .glide__bullets {
-      display: flex;
-      justify-content: center;
-      margin-top: 2rem;
-    }
-    
-    .glide__bullet {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: var(--gray-light);
-      border: none;
-      margin: 0 0.25rem;
-      transition: all 0.3s ease;
-    }
-    
-    .glide__bullet--active {
-      background-color: var(--primary-color);
-      transform: scale(1.2);
-    }
-    
-    /* Testimonial Section */
-    .testimonial_section {
-      background-color: white;
-    }
-    
-    .testimonial-card {
-      background: white;
-      border-radius: var(--rounded-lg);
-      padding: 2rem;
-      box-shadow: var(--shadow-md);
-      transition: all 0.5s ease;
-      height: 100%;
-    }
-    
-    .testimonial-card:hover {
-      transform: translateY(-8px);
-      box-shadow: var(--shadow-lg);
-    }
-    
-    .testimonial-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1.5rem;
-    }
-    
-    .testimonial-avatar {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--secondary-color);
-      margin-right: 1.5rem;
-    }
-    
-    .testimonial-author {
-      font-weight: 600;
-      font-size: 1.1rem;
-      margin-bottom: 0.25rem;
-    }
-    
-    .testimonial-role {
-      color: var(--gray-medium);
-      font-size: 0.9rem;
-    }
-    
-    .testimonial-quote {
+    .future-ready-content {
+      max-width: 800px;
+      margin: 0 auto;
       position: relative;
-      padding-left: 1.5rem;
-    }
-    
-    .testimonial-quote:before {
-      content: '"';
-      position: absolute;
-      left: 0;
-      top: -0.5rem;
-      font-size: 3rem;
-      color: var(--primary-color);
-      opacity: 0.2;
-      font-family: serif;
+      z-index: 1;
     }
     
     /* Contact Section */
@@ -587,21 +767,23 @@
     .contact-form {
       background: white;
       padding: 2.5rem;
-      border-radius: var(--rounded-lg);
-      box-shadow: var(--shadow-md);
+      border-radius: var(--rounded-xl);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--gray-light);
     }
     
     .form-control {
       height: 50px;
-      border: 1px solid var(--gray-light);
-      border-radius: var(--rounded-sm);
-      padding: 0.75rem 1rem;
+      border: 2px solid var(--gray-light);
+      border-radius: var(--rounded-md);
+      padding: 0.75rem 1.25rem;
       transition: all 0.3s ease;
+      font-size: 0.95rem;
     }
     
     .form-control:focus {
-      border-color: var(--primary-color);
-      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+      border-color: var(--tech-blue);
+      box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
     }
     
     textarea.form-control {
@@ -612,77 +794,26 @@
     .whatsapp-button {
       display: inline-flex;
       align-items: center;
-      background: #25D366;
+      background: linear-gradient(135deg, #25D366, #128C7E);
       color: white;
-      padding: 0.75rem 1.75rem;
+      padding: 0.875rem 1.75rem;
       border-radius: 50px;
       font-weight: 600;
       text-decoration: none;
       transition: all 0.3s ease;
-      box-shadow: var(--shadow-sm);
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+      font-size: 0.95rem;
     }
     
     .whatsapp-button:hover {
-      background: #128C7E;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
       color: white;
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-md);
     }
     
     .whatsapp-icon {
-      margin-right: 0.5rem;
+      margin-right: 0.75rem;
       font-size: 1.25rem;
-    }
-    
-    /* Admission Section */
-    .admission_section {
-      position: relative;
-      height: 500px;
-      overflow: hidden;
-    }
-    
-    #map {
-      height: 100%;
-      width: 100%;
-      filter: grayscale(20%) contrast(110%) brightness(90%);
-    }
-    
-    .admission-card {
-      background: white;
-      padding: 2rem;
-      border-radius: var(--rounded-lg);
-      box-shadow: var(--shadow-xl);
-      display: flex;
-      max-width: 800px;
-      transition: all 0.5s ease;
-      position: relative;
-      margin: -150px auto 0;
-    }
-    
-    .admission-card:hover {
-      transform: translateY(-8px);
-    }
-    
-    .admission-img {
-      flex: 1;
-      padding-right: 1.5rem;
-    }
-    
-    .admission-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: var(--rounded-md);
-    }
-    
-    .admission-content {
-      flex: 1;
-    }
-    
-    .admission-content h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      color: var(--dark-color);
     }
     
     /* Footer */
@@ -690,11 +821,23 @@
       background: var(--dark-color);
       color: white;
       padding: 4rem 0 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .footer:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-tech);
     }
     
     .footer-title {
-      font-size: 1.25rem;
-      font-weight: 600;
+      font-size: 1.2rem;
+      font-weight: 700;
       margin-bottom: 1.5rem;
       position: relative;
       display: inline-block;
@@ -707,12 +850,13 @@
       height: 3px;
       bottom: -8px;
       left: 0;
-      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      background: var(--gradient-tech);
     }
     
     .footer-links {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
     
     .footer-links li {
@@ -720,116 +864,183 @@
     }
     
     .footer-links a {
-      color: var(--gray-light);
+      color: var(--gray-medium);
       text-decoration: none;
       transition: all 0.3s ease;
+      display: inline-block;
+      font-size: 0.95rem;
     }
     
     .footer-links a:hover {
-      color: white;
-      padding-left: 5px;
+      color: var(--tech-blue);
+      transform: translateX(5px);
     }
     
     .footer-contact p {
       display: flex;
       align-items: flex-start;
       margin-bottom: 1rem;
-      color: var(--gray-light);
+      color: var(--gray-medium);
+      font-size: 0.95rem;
     }
     
     .footer-contact i {
       margin-right: 0.75rem;
-      color: var(--secondary-color);
+      color: var(--tech-blue);
       margin-top: 3px;
+      font-size: 1rem;
     }
     
     .social-links {
       display: flex;
-      gap: 1rem;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
     }
     
     .social-link {
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background-color: rgba(255,255,255,0.1);
+      background: rgba(255, 255, 255, 0.1);
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
       transition: all 0.3s ease;
+      font-size: 1rem;
     }
     
     .social-link:hover {
-      background-color: var(--primary-color);
-      transform: translateY(-3px);
+      background: var(--gradient-tech);
+      transform: translateY(-3px) rotate(5deg);
     }
     
     .footer-bottom {
       border-top: 1px solid rgba(255,255,255,0.1);
       padding-top: 1.5rem;
-      margin-top: 2rem;
+      margin-top: 2.5rem;
       text-align: center;
     }
     
     .copyright {
       color: var(--gray-medium);
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
     
     .copyright a {
-      color: var(--secondary-color);
+      color: var(--tech-blue);
       text-decoration: none;
+      font-weight: 600;
     }
     
-    /* Back to Top Button */
+    /* Floating Elements */
+    .floating-element {
+      position: absolute;
+      z-index: 0;
+      pointer-events: none;
+    }
+    
+    .floating-tech {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--tech-blue), var(--tech-purple));
+      opacity: 0.1;
+      animation: float 20s infinite ease-in-out;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      25% { transform: translate(20px, -20px) rotate(90deg); }
+      50% { transform: translate(-15px, 15px) rotate(180deg); }
+      75% { transform: translate(10px, -10px) rotate(270deg); }
+    }
+    
+    /* Fixed Back to Top Button - IMPROVED */
     .back-to-top {
       position: fixed;
-      bottom: 2rem;
-      right: 2rem;
+      bottom: 20px;
+      right: 20px;
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background-color: var(--primary-color);
+      background: var(--gradient-tech);
       color: white;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 1.25rem;
-      box-shadow: var(--shadow-md);
+      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
       opacity: 0;
       visibility: hidden;
       transition: all 0.3s ease;
-      z-index: 999;
+      z-index: 9999;
+      border: none;
+      text-decoration: none;
+      cursor: pointer;
     }
     
     .back-to-top.active {
       opacity: 1;
       visibility: visible;
+      transform: translateY(0);
     }
     
     .back-to-top:hover {
-      background-color: var(--primary-light);
-      transform: translateY(-3px);
+      background: linear-gradient(135deg, var(--primary-light), var(--accent-light));
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6);
     }
     
     /* Responsive Adjustments */
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
       .hero_detail-box h1 {
         font-size: 2.5rem;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      body {
+        padding-top: 65px;
+      }
+      
+      .navbar {
+        min-height: 65px;
+      }
+      
+      .hero_section {
+        margin-top: -65px;
+        padding-top: 8rem;
+        text-align: center;
+      }
+      
+      .hero_detail-box h1 {
+        font-size: 2.25rem;
       }
       
       .section {
         padding: 4rem 0;
       }
       
-      .admission-card {
-        flex-direction: column;
+      .hero-stats {
+        justify-content: center;
+        gap: 1.5rem;
       }
       
-      .admission-img {
-        padding-right: 0;
-        padding-bottom: 1.5rem;
+      .stat-item {
+        min-width: 90px;
+      }
+      
+      .digital-campus_section:before {
+        display: none;
+      }
+      
+      .contact-form {
+        padding: 2rem;
       }
     }
     
@@ -839,62 +1050,119 @@
       }
       
       .navbar-brand img {
-        height: 36px;
+        height: 35px;
       }
       
       .hero_section {
-        padding: 6rem 0 3rem;
-        text-align: center;
+        padding: 7rem 0 3rem;
       }
       
       .hero_detail-box h1 {
         font-size: 2rem;
       }
       
-      .hero_detail-box h3 {
-        font-size: 1.1rem;
-      }
-      
       .hero_detail-box p {
         font-size: 1rem;
-        margin-left: auto;
-        margin-right: auto;
       }
       
       .section-title {
         font-size: 1.75rem;
       }
       
-      .admission-card {
-        margin: -100px auto 0;
-        width: 90%;
+      .section-subtitle {
+        font-size: 1rem;
       }
       
-      #map {
-        height: 400px;
+      .hero-stats {
+        gap: 1rem;
       }
       
-      .admission_section {
-        height: auto;
+      .stat-item {
+        min-width: 80px;
+      }
+      
+      .stat-number {
+        font-size: 1.5rem;
+      }
+      
+      .stat-label {
+        font-size: 0.8rem;
       }
       
       .gallery-item {
         height: 200px;
       }
+      
+      .innovation-card,
+      .program-card {
+        padding: 1.75rem;
+      }
+      
+      .btn {
+        padding: 0.65rem 1.5rem;
+        font-size: 0.9rem;
+      }
+      
+      .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 1.1rem;
+      }
     }
     
     @media (max-width: 576px) {
+      body {
+        padding-top: 60px;
+      }
+      
+      .navbar {
+        min-height: 60px;
+        padding: 0.4rem 0;
+      }
+      
+      .hero_section {
+        margin-top: -60px;
+        padding-top: 7rem;
+      }
+      
       .hero_detail-box h1 {
         font-size: 1.75rem;
       }
       
-      .btn {
-        padding: 0.6rem 1.5rem;
-        font-size: 0.9rem;
+      .tech-badge {
+        font-size: 0.8rem;
+        padding: 0.4rem 1rem;
       }
       
-      .contact-form {
-        padding: 1.5rem;
+      .section-title {
+        font-size: 1.5rem;
+      }
+      
+      .hero_btn-continer {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .hero_btn-continer .btn {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0 !important;
+      }
+      
+      .hero-stats {
+        justify-content: space-around;
+        gap: 0.5rem;
+      }
+      
+      .stat-item {
+        min-width: 70px;
+      }
+      
+      .stat-number {
+        font-size: 1.25rem;
       }
       
       .footer {
@@ -910,20 +1178,58 @@
       .social-links {
         justify-content: center;
       }
+      
+      .back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+        right: 10px;
+        font-size: 1rem;
+      }
+    }
+    
+    @media (max-width: 380px) {
+      .navbar-brand {
+        font-size: 1.1rem;
+      }
+      
+      .navbar-brand img {
+        height: 30px;
+        margin-right: 8px;
+      }
+      
+      .hero_detail-box h1 {
+        font-size: 1.5rem;
+      }
+      
+      .stat-item {
+        min-width: 60px;
+      }
+      
+      .stat-number {
+        font-size: 1.1rem;
+      }
+      
+      .stat-label {
+        font-size: 0.75rem;
+      }
     }
   </style>
 </head>
 
 <body>
-  <!-- Header/Navbar -->
+  <!-- Floating Tech Elements -->
+  <div class="floating-element floating-tech" style="top: 20%; left: 5%;"></div>
+  <div class="floating-element floating-tech" style="top: 60%; right: 10%; animation-delay: -5s;"></div>
+  <div class="floating-element floating-tech" style="top: 40%; left: 15%; animation-delay: -10s;"></div>
+
+  <!-- Improved Header/Navbar -->
   <header class="header_section">
     <nav class="navbar navbar-expand-lg custom_nav-container fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="images/prospect-school-logo.jpeg" alt="Prospect Private School Logo">
-          <span>
-            Prospect Private School
-          </span>
+          Prospect Private School
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -934,7 +1240,7 @@
           <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -959,65 +1265,233 @@
   <section class="hero_section">
     <div class="hero-container container">
       <div class="row align-items-center">
-        <div class="col-lg-6" data-aos="fade-right">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
           <div class="hero_detail-box">
-            <h3>
-              Welcome to a Brighter Future <br>
-              At
-            </h3>
+            <div class="tech-badge">
+              <i class="fas fa-rocket"></i> Education Innovation & Technology
+            </div>
             <h1>
-              Prospect Private School
+              Shaping Tomorrow's Innovators
             </h1>
             <p>
-              Nurturing a community of learners who are inspired to think creatively, solve problems effectively, and achieve their goals.
+              Where traditional excellence meets cutting-edge technology. We're preparing students for a digital future through STEM education, coding, and innovative learning approaches.
             </p>
             <div class="hero_btn-continer">
               <a href="contact.html" class="btn btn-outline-light mr-3">
                 <span>
-                  Contact Us
+                  Schedule Tour
                 </span>
-                <i class="fas fa-arrow-right btn-icon"></i>
+                <i class="fas fa-calendar-alt btn-icon"></i>
               </a>
-              <a href="about.html" class="btn btn-primary">
+              <a href="#tech-programs" class="btn btn-tech">
                 <span>
-                  Learn More
+                  Explore Programs
                 </span>
-                <i class="fas fa-book btn-icon"></i>
+                <i class="fas fa-laptop-code btn-icon"></i>
               </a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">WAEC Success</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Tech Programs</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Digital Learning</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6" data-aos="fade-left">
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
           <div class="hero_img-container">
-            <img src="images/hero.png" alt="Students learning" class="img-fluid">
+            <img src="https://www.csm.tech/storage/uploads/news/657fee378599b1702882871Thumb.jpg" alt="Students learning technology" class="img-fluid">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="about_section section">
+  <!-- Innovation Showcase -->
+  <section class="innovation_section section">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">
-        About Our School
+      <h2 class="section-title center" data-aos="fade-up">
+        Our Innovation Ecosystem
       </h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        We blend academic excellence with technological innovation to create a future-ready learning environment.
+      </p>
+      
       <div class="row">
-        <div class="col-lg-6" data-aos="fade-right">
-          <p>
-            <b>Prospect Private School</b> is dedicated to shaping the leaders of tomorrow by nurturing well-rounded students who not only excel academically but are also equipped with the skills and values needed for lifelong success. We believe that education goes beyond the classroom, which is why our rigorous curriculum is thoughtfully designed to challenge students and stimulate their intellectual curiosity.
-          </p>
-          <p>
-            At Prospect, we create a supportive and inclusive learning environment where every student is encouraged to reach their full potential. Our approach fosters critical thinking, creativity, and problem-solving abilities, ensuring that students develop a deep understanding of the subjects they study.
-          </p>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="innovation-card">
+            <div class="innovation-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h4>Compulsory Coding Education</h4>
+            <p>From primary to secondary, all students learn programming languages and computational thinking to prepare for the digital age.</p>
+          </div>
         </div>
+        
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="innovation-card">
+            <div class="innovation-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h4>STEM & Robotics Lab</h4>
+            <p>State-of-the-art laboratory equipped with robotics kits, 3D printers, and AI learning tools for hands-on technological exploration.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="innovation-card">
+            <div class="innovation-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h4>CBT & Digital Assessment</h4>
+            <p>Full implementation of Computer-Based Testing preparing students for WAEC CBT and modern examination formats.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="innovation-card">
+            <div class="innovation-icon">
+              <i class="fas fa-wifi"></i>
+            </div>
+            <h4>Digital Learning Platform</h4>
+            <p>24/7 access to learning materials, virtual classrooms, and interactive resources through our custom EdTech platform.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="innovation-card">
+            <div class="innovation-icon">
+              <i class="fas fa-id-card"></i>
+            </div>
+            <h4>Smart ID System</h4>
+            <p>Digitalized smart cards for secure campus access, attendance tracking, and personalized learning experiences.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="innovation-card">
+            <div class="innovation-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h4>Parent-Teacher Tech Portal</h4>
+            <p>Real-time communication and progress tracking through our dedicated parent portal and mobile app.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Programs Section -->
+  <section id="tech-programs" class="tech-programs_section section">
+    <div class="container">
+      <h2 class="section-title center" data-aos="fade-up">
+        Technology-Focused Programs
+      </h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Our curriculum is designed to equip students with essential 21st-century skills and technological literacy.
+      </p>
+      
+      <div class="row">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="program-card">
+            <span class="program-tag">Ages 5-11</span>
+            <h4>Primary Tech Foundation</h4>
+            <p>Introduction to computational thinking, basic programming, and digital literacy through interactive games and creative projects.</p>
+            <ul class="mt-3" style="color: #cbd5e1;">
+              <li>Scratch Programming</li>
+              <li>Digital Art & Animation</li>
+              <li>Basic Robotics</li>
+              <li>Internet Safety</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="program-card">
+            <span class="program-tag">Ages 12-17</span>
+            <h4>Secondary STEM Academy</h4>
+            <p>Advanced programming, engineering principles, and scientific research with state-of-the-art laboratory equipment.</p>
+            <ul class="mt-3" style="color: #cbd5e1;">
+              <li>Python & JavaScript</li>
+              <li>Web Development</li>
+              <li>AI & Machine Learning Basics</li>
+              <li>3D Modeling & Printing</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="program-card">
+            <span class="program-tag">All Ages</span>
+            <h4>Digital Creativity Labs</h4>
+            <p>Specialized programs in digital arts, music production, video editing, and multimedia content creation.</p>
+            <ul class="mt-3" style="color: #cbd5e1;">
+              <li>Graphic Design</li>
+              <li>Video Production</li>
+              <li>Music Technology</li>
+              <li>Digital Storytelling</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Campus Section -->
+  <section class="digital-campus_section section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h2 class="section-title">Our Digital Campus</h2>
+          <p class="mb-4">Experience education reimagined for the digital age. Our campus integrates technology into every aspect of learning and operations.</p>
+          
+          <div class="digital-feature">
+            <div class="digital-icon">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <div>
+              <h5>Smart Classrooms</h5>
+              <p>Interactive whiteboards, high-speed internet, and multimedia learning stations in every classroom.</p>
+            </div>
+          </div>
+          
+          <div class="digital-feature">
+            <div class="digital-icon">
+              <i class="fas fa-satellite-dish"></i>
+            </div>
+            <div>
+              <h5>Campus-Wide Connectivity</h5>
+              <p>Secure high-speed Wi-Fi throughout the campus with content filtering and digital safety measures.</p>
+            </div>
+          </div>
+          
+          <div class="digital-feature">
+            <div class="digital-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div>
+              <h5>Digital Security System</h5>
+              <p>Advanced surveillance, smart access control, and emergency response systems for student safety.</p>
+            </div>
+          </div>
+          
+          <a href="about.html" class="btn btn-primary mt-4">
+            <span>Explore Campus</span>
+            <i class="fas fa-map-marked-alt btn-icon"></i>
+          </a>
+        </div>
+        
         <div class="col-lg-6" data-aos="fade-left">
-          <p>
-            Our commitment to excellence is reflected in the passionate and dedicated educators who guide our students every step of the way. We strive to inspire a lifelong passion for learning, empowering our students to pursue their dreams with confidence and determination. At Prospect Private School, we are not just preparing students for the next exam—we are preparing them for the challenges and opportunities of the future.
-          </p>
-          <div class="about_img-box d-flex justify-content-between w-100 mt-4">
-            <img src="images/coding-session.jpeg" alt="Coding session" class="w-50 rounded-lg shadow mr-3">
-            <img src="images/prospect-staffs.jpeg" alt="School staff" class="w-50 rounded-lg shadow">
+          <div class="hero_img-container mt-4 mt-lg-0">
+            <img src="images/coding-session.jpeg" alt="Digital classroom" class="img-fluid">
           </div>
         </div>
       </div>
@@ -1028,10 +1502,10 @@
   <section class="gallery_section section">
     <div class="container">
       <h2 class="section-title center" data-aos="fade-up">
-        Our Gallery
+        Innovation in Action
       </h2>
       <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-        Immerse yourself in the vibrant community of Prospect Private School and witness the passion and dedication of our students and faculty.
+        See how technology and creativity come together in our daily learning experiences.
       </p>
       
       <div class="gallery-container" data-aos="fade-up">
@@ -1040,55 +1514,46 @@
             <div class="glide__slides">
               <div class="glide__slide">
                 <div class="gallery-item">
-                  <img src="images/cultural2.jpeg" alt="Cultural event">
-                  <div class="gallery-caption">
-                    <h5>Cultural Day</h5>
-                    <p>Students showcasing traditional attire</p>
-                  </div>
-                </div>
-              </div>
-              <div class="glide__slide">
-                <div class="gallery-item">
-                  <img src="images/cultural1.jpeg" alt="Cultural event">
-                  <div class="gallery-caption">
-                    <h5>Cultural Performance</h5>
-                    <p>Traditional dance performance</p>
-                  </div>
-                </div>
-              </div>
-              <div class="glide__slide">
-                <div class="gallery-item">
-                  <img src="images/colorday2.jpeg" alt="Color day">
-                  <div class="gallery-caption">
-                    <h5>Color Day Celebration</h5>
-                    <p>Students enjoying themed activities</p>
-                  </div>
-                </div>
-              </div>
-              <div class="glide__slide">
-                <div class="gallery-item">
-                  <img src="images/colorday.jpeg" alt="Color day">
-                  <div class="gallery-caption">
-                    <h5>Color Day Parade</h5>
-                    <p>Vibrant display of school spirit</p>
-                  </div>
-                </div>
-              </div>
-              <div class="glide__slide">
-                <div class="gallery-item">
-                  <img src="images/prospect-staffs.jpeg" alt="School staff">
-                  <div class="gallery-caption">
-                    <h5>Dedicated Staff</h5>
-                    <p>Our passionate teaching team</p>
-                  </div>
-                </div>
-              </div>
-              <div class="glide__slide">
-                <div class="gallery-item">
                   <img src="images/coding-session.jpeg" alt="Coding class">
                   <div class="gallery-caption">
-                    <h5>STEM Education</h5>
-                    <p>Students learning programming</p>
+                    <h5>Programming Workshop</h5>
+                    <p>Students learning Python programming</p>
+                  </div>
+                </div>
+              </div>
+              <div class="glide__slide">
+                <div class="gallery-item">
+                  <img src="images/colorday.jpeg" alt="Tech project">
+                  <div class="gallery-caption">
+                    <h5>Robotics Club</h5>
+                    <p>Building and programming robots</p>
+                  </div>
+                </div>
+              </div>
+              <div class="glide__slide">
+                <div class="gallery-item">
+                  <img src="images/cultural2.jpeg" alt="Digital art">
+                  <div class="gallery-caption">
+                    <h5>Digital Arts Studio</h5>
+                    <p>Creating digital animations and designs</p>
+                  </div>
+                </div>
+              </div>
+              <div class="glide__slide">
+                <div class="gallery-item">
+                  <img src="images/prospect-staffs.jpeg" alt="Tech integration">
+                  <div class="gallery-caption">
+                    <h5>Teacher Tech Training</h5>
+                    <p>Professional development in EdTech</p>
+                  </div>
+                </div>
+              </div>
+              <div class="glide__slide">
+                <div class="gallery-item">
+                  <img src="images/colorday2.jpeg" alt="STEM lab">
+                  <div class="gallery-caption">
+                    <h5>STEM Laboratory</h5>
+                    <p>Hands-on science experiments</p>
                   </div>
                 </div>
               </div>
@@ -1099,50 +1564,26 @@
             <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
             <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
           </div>
-          
-          <div class="glide__bullets" data-glide-el="controls[nav]">
-            <button class="glide__bullet" data-glide-dir="=0"></button>
-            <button class="glide__bullet" data-glide-dir="=1"></button>
-            <button class="glide__bullet" data-glide-dir="=2"></button>
-            <button class="glide__bullet" data-glide-dir="=3"></button>
-          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Testimonial Section -->
-  <section class="testimonial_section section">
+  <!-- Future Ready Section -->
+  <section class="future-ready_section section">
     <div class="container">
-      <h2 class="section-title center" data-aos="fade-up">
-        Our Students Feedback
-      </h2>
-      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-        Hear what our students have to say about their experience at Prospect Private School.
-      </p>
-      
-      <div class="row">
-        <div class="col-lg-8 mx-auto" data-aos="fade-up">
-          <div class="testimonial-card">
-            <div class="testimonial-header">
-              <img src="images/prospect_senior_girl.png" alt="Florence Atulegwu" class="testimonial-avatar">
-              <div>
-                <h4 class="testimonial-author">Florence Atulegwu</h4>
-                <p class="testimonial-role">Senior Student</p>
-              </div>
-            </div>
-            <div class="testimonial-quote">
-              <h5 class="mb-3"><b>To our esteemed proprietress</b></h5>
-              <p class="mb-4">
-                "Your vision and dedication have been the pillars of our school's achievements. Your unwavering commitment to creating a nurturing and academically challenging environment has provided us with the foundation to grow, learn, and flourish. Your passion for education and belief in every student's potential inspire us daily."
-              </p>
-              <h5 class="mb-3"><b>To the entire management team</b></h5>
-              <p>
-                "We extend our heartfelt thanks for the hard work you do behind the scenes. Your careful planning, coordination, and support ensure that our school operates smoothly and effectively. You have fostered a safe, welcoming, and enriching environment where both students and staff can excel."
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="future-ready-content" data-aos="fade-up">
+        <h2 class="section-title center">Preparing for the Future</h2>
+        <p class="lead mb-4">
+          In today's rapidly evolving world, technological literacy is no longer optional—it's essential. At Prospect Private School, we're committed to preparing students not just for academic success, but for leadership in a digital future.
+        </p>
+        <p class="mb-5">
+          Our graduates leave with more than just excellent exam results. They possess the digital skills, critical thinking abilities, and innovative mindset needed to thrive in tomorrow's world.
+        </p>
+        <a href="contact.html" class="btn btn-outline-light">
+          <span>Join Our Tech Journey</span>
+          <i class="fas fa-rocket btn-icon"></i>
+        </a>
       </div>
     </div>
   </section>
@@ -1151,10 +1592,10 @@
   <section class="contact_section section">
     <div class="container">
       <h2 class="section-title center" data-aos="fade-up">
-        Contact Us
+        Ready to Innovate With Us?
       </h2>
       <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-        Have questions or want to learn more? Reach out to us today.
+        Connect with us to learn more about our technology-integrated programs and schedule a campus tour.
       </p>
       
       <div class="row justify-content-center">
@@ -1169,56 +1610,41 @@
                   <input type="email" class="form-control" placeholder="Your Email" required>
                 </div>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="tel" class="form-control" placeholder="Phone Number">
+                </div>
+                <div class="form-group col-md-6">
+                  <select class="form-control">
+                    <option selected>Interest Level</option>
+                    <option>Preschool/Nursery</option>
+                    <option>Primary School</option>
+                    <option>Secondary School</option>
+                    <option>Summer Boot Camp</option>
+                    <option>Technology Programs</option>
+                  </select>
+                </div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" placeholder="Your Message" rows="5" required></textarea>
+                <textarea class="form-control" placeholder="Tell us about your interest in tech education..." rows="4" required></textarea>
               </div>
               <div class="text-center">
-                <button type="submit" class="btn btn-primary px-5">
-                  Send Message
+                <button type="submit" class="btn btn-tech px-5">
+                  <i class="fas fa-paper-plane mr-2"></i> Send Message
                 </button>
               </div>
             </form>
             
-            <div class="text-center mt-4">
-              <a href="https://wa.me/+2348133412091" target="_blank" class="whatsapp-button">
+            <div class="text-center mt-5">
+              <p class="mb-3">Or connect with us directly:</p>
+              <a href="https://wa.me/+2348133412091" target="_blank" class="whatsapp-button mr-3">
                 <i class="fab fa-whatsapp whatsapp-icon"></i>
-                Chat with us on WhatsApp
+                Chat on WhatsApp
               </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Admission Section -->
-  <section class="admission_section section">
-    <div class="container-fluid position-relative h-100">
-      <div class="row h-100">
-        <div id="map" class="h-100 w-100">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0142581634636!2d3.1924330690845846!3d6.645150407066591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9be7994fac0b%3A0xf73fc4b27dbf737f!2sprospect%20private%20school%2C%20ijagba%20otta%2C%20ogun%20state!5e0!3m2!1sen!2sng!4v1723858920252!5m2!1sen!2sng" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8" data-aos="fade-up">
-          <div class="admission-card">
-            <div class="admission-img">
-              <img src="images/kidss.jpg" alt="Happy students">
-            </div>
-            <div class="admission-content">
-              <h3>Apply for Admission</h3>
-              <p class="my-3">
-                Join our community of learners and give your child the gift of quality education. Applications for the new academic session are now open.
-              </p>
-              <div class="d-flex">
-                <a href="contact.html" class="btn btn-primary mr-3">Contact Us</a>
-                <a href="about.html" class="btn btn-outline-light">Learn More</a>
-              </div>
+              <a href="tel:+2348133412091" class="btn btn-outline-primary">
+                <i class="fas fa-phone mr-2"></i>
+                Call Now
+              </a>
             </div>
           </div>
         </div>
@@ -1232,14 +1658,15 @@
       <div class="row">
         <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up">
           <h3 class="footer-title">Prospect Private School</h3>
-          <p class="mt-3" style="color: var(--gray-light);">
-            Nurturing a community of learners who are inspired to think creatively, solve problems effectively, and achieve their goals.
+          <p class="mt-3" style="color: var(--gray-medium);">
+            Blending academic excellence with technological innovation to prepare students for leadership in a digital world.
           </p>
-          <div class="social-links mt-4">
+          <div class="social-links">
             <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
             <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
         <div class="col-lg-2 col-md-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
@@ -1249,15 +1676,17 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="newsletter.html">Newsletter</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://edstream.com.ng/accounts/login/">E-portal</a></li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="footer-title">Programs</h3>
+          <h3 class="footer-title">Tech Programs</h3>
           <ul class="footer-links">
-            <li><a href="#">Primary Education</a></li>
-            <li><a href="#">Secondary Education</a></li>
-            <li><a href="#">STEM Programs</a></li>
-            <li><a href="#">Extracurricular</a></li>
+            <li><a href="#">Coding Classes</a></li>
+            <li><a href="#">STEM Education</a></li>
+            <li><a href="#">Robotics Club</a></li>
+            <li><a href="#">Digital Arts</a></li>
+            <li><a href="#">CBT Preparation</a></li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
@@ -1266,22 +1695,24 @@
             <p><i class="fas fa-map-marker-alt"></i> Ijagba, Obasanjo, Sango Ota, Ogun State</p>
             <p><i class="fas fa-phone"></i> +234 813 341 2091</p>
             <p><i class="fas fa-envelope"></i> info@prospectschool.com.ng</p>
+            <p><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 4:00 PM</p>
           </div>
         </div>
       </div>
       
       <div class="footer-bottom">
         <p class="copyright">
-          &copy; <script>document.write(new Date().getFullYear())</script> Prospect Private School. All Rights Reserved.
+          &copy; <script>document.write(new Date().getFullYear())</script> Prospect Private School. All Rights Reserved. | 
+          <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
         </p>
       </div>
     </div>
   </footer>
 
-  <!-- Back to Top Button -->
-  <a href="#" class="back-to-top">
+  <!-- Improved Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
     <i class="fas fa-arrow-up"></i>
-  </a>
+  </button>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -1293,81 +1724,147 @@
   <!-- Glide.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js"></script>
   
-  <!-- EmailJS -->
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  
+  <!-- Improved JavaScript -->
   <script>
     // Initialize AOS animation
     AOS.init({
       duration: 800,
       easing: 'ease-in-out',
-      once: true
+      once: true,
+      offset: 100
     });
     
-    // Navbar scroll effect
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 100) {
-        $('.navbar').addClass('scrolled');
+    // Improved Navbar scroll effect
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('.navbar');
+    
+    window.addEventListener('scroll', function() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // Show/hide navbar on scroll
+      if (scrollTop > 100) {
+        navbar.classList.add('scrolled');
       } else {
-        $('.navbar').removeClass('scrolled');
+        navbar.classList.remove('scrolled');
       }
       
       // Back to top button
-      if ($(this).scrollTop() > 300) {
-        $('.back-to-top').addClass('active');
+      const backToTop = document.getElementById('backToTop');
+      if (scrollTop > 300) {
+        backToTop.classList.add('active');
       } else {
-        $('.back-to-top').removeClass('active');
+        backToTop.classList.remove('active');
       }
+      
+      lastScrollTop = scrollTop;
     });
     
-    // Back to top button click
-    $('.back-to-top').click(function(e) {
+    // FIXED Back to top button - This now works properly
+    document.getElementById('backToTop').addEventListener('click', function(e) {
       e.preventDefault();
-      $('html, body').animate({scrollTop: 0}, 800);
-      return false;
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // Alternative smooth scroll using vanilla JS
+    function smoothScrollToTop() {
+      const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      if (currentScroll > 0) {
+        window.requestAnimationFrame(smoothScrollToTop);
+        window.scrollTo(0, currentScroll - (currentScroll / 8));
+      }
+    }
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        if (this.getAttribute('href') === '#') return;
+        
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
     });
     
     // Initialize Glide.js for Gallery
-    new Glide('.glide', {
-      type: 'carousel',
-      perView: 3,
-      gap: 20,
-      breakpoints: {
-        992: {
-          perView: 2
-        },
-        768: {
-          perView: 1
+    if (document.querySelector('.glide')) {
+      new Glide('.glide', {
+        type: 'carousel',
+        perView: 3,
+        gap: 20,
+        autoplay: 4000,
+        hoverpause: true,
+        breakpoints: {
+          1200: {
+            perView: 3
+          },
+          992: {
+            perView: 2
+          },
+          768: {
+            perView: 1
+          }
         }
-      }
-    }).mount();
+      }).mount();
+    }
     
-    // Initialize EmailJS when DOM is loaded
+    // Contact form submission
     document.addEventListener('DOMContentLoaded', function() {
-      // Initialize EmailJS
-      emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS User ID
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+          event.preventDefault();
+          
+          const submitBtn = this.querySelector('button[type="submit"]');
+          const originalText = submitBtn.innerHTML;
+          
+          submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
+          submitBtn.disabled = true;
+          
+          // Simulate API call
+          setTimeout(function() {
+            alert('Thank you for your interest in Prospect Private School! Our admissions team will contact you within 24 hours.');
+            contactForm.reset();
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+          }, 1500);
+        });
+      }
       
-      // Contact form submission
-      document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        const name = this.querySelector('input[type="text"]').value;
-        const email = this.querySelector('input[type="email"]').value;
-        const subject = this.querySelector('input[placeholder="Subject"]').value;
-        const message = this.querySelector('textarea').value;
-        
-        emailjs.send('service_ys1cx8e', 'template_k8hu6oy', {
-          from_name: name,
-          from_email: email,
-          subject: subject,
-          message: message
-        }).then(function(response) {
-          alert('Thank you! Your message has been sent successfully.');
-          document.getElementById('contactForm').reset();
-        }, function(error) {
-          alert('Oops! Something went wrong. Please try again later.');
+      // Close mobile navbar when clicking a link
+      const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth < 992) {
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+              toggle: false
+            });
+            bsCollapse.hide();
+          }
         });
       });
+    });
+    
+    // Prevent navbar collapse from staying open on resize
+    window.addEventListener('resize', function() {
+      if (window.innerWidth >= 992) {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+          navbarCollapse.classList.remove('show');
+        }
+      }
     });
   </script>
   
@@ -1376,19 +1873,49 @@
     {
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
-      "name": "Great Prospect Private School",
+      "name": "Prospect Private School",
       "url": "https://www.prospectschool.com.ng",
       "logo": "https://www.prospectschool.com.ng/images/prospect-school-logo.jpeg",
-      "description": "Nurturing a community of learners inspired to think creatively, solve problems effectively, and achieve their goals.",
+      "description": "Innovative private school blending traditional education with cutting-edge technology. Offering STEM programs, coding classes, and digital literacy for future-ready learners.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Ota 112104, Ogun State",
-        "addressLocality": "Ota",
+        "streetAddress": "Ijagba, Obasanjo",
+        "addressLocality": "Sango Ota",
         "addressRegion": "Ogun State",
         "postalCode": "112104",
         "addressCountry": "Nigeria"
       },
-      "telephone": "+234-813-341-2091"
+      "telephone": "+234-813-341-2091",
+      "openingHours": "Mo-Fr 08:00-16:00",
+      "curriculum": "Nigerian Curriculum with Technology Integration",
+      "programs": ["Primary Education", "Secondary Education", "STEM Programs", "Coding Classes", "Digital Literacy"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Educational Programs",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Primary Education with Technology"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Secondary STEM Education"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Coding and Programming"
+            }
+          }
+        ]
+      }
     }
   </script>
 </body>

@@ -1224,8 +1224,8 @@
   <div class="floating-element floating-tech" style="top: 40%; left: 15%; animation-delay: -10s;"></div>
 
   <!-- Improved Header/Navbar -->
-  <header class="header_section">
-    <nav class="navbar navbar-expand-lg custom_nav-container fixed-top">
+  <header class="header_section" data-aos="none">
+    <nav class="navbar navbar-expand-lg custom_nav-container fixed-top" data-aos="none">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="images/prospect-school-logo.jpeg" alt="Prospect Private School Logo">
@@ -1727,13 +1727,43 @@
   <!-- Improved JavaScript -->
   <script>
     // Initialize AOS animation
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true,
-      offset: 100
-    });
+    // Initialize AOS animation - EXCLUDE NAVBAR
+AOS.init({
+  duration: 800,
+  easing: 'ease-in-out',
+  once: true,
+  offset: 100,
+  // Add this to exclude the navbar
+  disable: function() {
+    const maxWidth = 991;
+    return window.innerWidth < maxWidth;
+  }
+});
+
+// OR you can initialize AOS and then immediately re-enable the navbar
+AOS.init({
+  duration: 800,
+  easing: 'ease-in-out',
+  once: true,
+  offset: 100
+});
+
+// Force the navbar to always be visible (remove any AOS classes)
+document.addEventListener('DOMContentLoaded', function() {
+  const navbar = document.querySelector('.navbar');
+  if (navbar) {
+    // Remove any AOS animation classes from navbar
+    navbar.classList.remove('aos-init', 'aos-animate');
+    navbar.removeAttribute('data-aos');
     
+    // Also remove from navbar children
+    const navbarElements = navbar.querySelectorAll('*');
+    navbarElements.forEach(el => {
+      el.classList.remove('aos-init', 'aos-animate');
+      el.removeAttribute('data-aos');
+    });
+  }
+});
     // Improved Navbar scroll effect
     let lastScrollTop = 0;
     const navbar = document.querySelector('.navbar');
